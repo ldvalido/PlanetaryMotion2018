@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-using PlanetaryMotion.Math.Extension;
+﻿using System;
 using Xunit;
 
 namespace PlanetaryMotion.Math.Test
@@ -12,8 +11,8 @@ namespace PlanetaryMotion.Math.Test
         [Fact]
         public void TestAlignment()
         {
-            var p1 = Complex.FromPolarCoordinates(1, 0);
-            var p2 = Complex.FromPolarCoordinates(1, System.Math.PI * 2);
+            var p1 = new Point(10, 1);
+            var p2 = new Point(-10, 1);
             var res = p1.IsAligned(p2);
             Assert.True(res);
         }
@@ -24,8 +23,8 @@ namespace PlanetaryMotion.Math.Test
         [Fact]
         public void TestNonAlignment()
         {
-            var p1 = Complex.FromPolarCoordinates(1, 0);
-            var p2 = Complex.FromPolarCoordinates(1, System.Math.PI);
+            var p1 = new Point(0, 1);
+            var p2 = new Point(1, 0);
             var res = p1.IsAligned(p2);
             Assert.False(res);
         }
@@ -33,12 +32,11 @@ namespace PlanetaryMotion.Math.Test
         [Fact]
         public void TestInvalidPlane()
         {
-            var p1 = Complex.FromPolarCoordinates(1, 0);
-            var p2 = Complex.FromPolarCoordinates(1, System.Math.PI * 2);
-            var p3 = Complex.FromPolarCoordinates(1, System.Math.PI * 4);
+            var p1 = new Point(1, 1);
+            var p2 = new Point(-1, 1);
+            var p3 = new Point(-1, 2);
             Assert.True(p1.IsAligned(p2));
-            Assert.True(p1.IsAligned(p3));
-            var plane = new Plane(p1,p2,p3);
+            Assert.Throws<ArgumentException>(() => new Plane(p1, p2, p3));
         }
     }
 }

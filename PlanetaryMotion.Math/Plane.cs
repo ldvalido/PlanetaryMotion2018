@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Numerics;
-using PlanetaryMotion.Math.Extension;
 
 namespace PlanetaryMotion.Math
 {
@@ -10,7 +9,7 @@ namespace PlanetaryMotion.Math
     public class Plane
     {
         #region C...tor
-        public Plane(Complex  p1,Complex p2,Complex p3)
+        public Plane(Point  p1,Point p2,Point p3)
         {
             if (!p1.IsAligned(p2) && !p1.IsAligned(p3))
             {
@@ -29,15 +28,23 @@ namespace PlanetaryMotion.Math
         /// <summary>
         /// 
         /// </summary>
-        public Complex P1 { get; set; }
+        public Point P1 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public Complex P2 { get; set; }
+        public Point P2 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public Complex P3 { get; set; }
+        public Point P3 { get; set; }
+        #endregion
+        
+        #region Public Methods
+
+        public bool Belongs(Point point)
+        {
+            return false;
+        }
         #endregion
     }
 }
