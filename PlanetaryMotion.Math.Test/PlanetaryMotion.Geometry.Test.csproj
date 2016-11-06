@@ -7,8 +7,8 @@
     <ProjectGuid>{73F82263-BC70-4532-B27B-E1A2603DC265}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PlanetaryMotion.Math.Test</RootNamespace>
-    <AssemblyName>PlanetaryMotion.Math.Test</AssemblyName>
+    <RootNamespace>PlanetaryMotion.Geometry.Test</RootNamespace>
+    <AssemblyName>PlanetaryMotion.Geometry.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -57,13 +57,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PlaneTest.cs" />
+    <Compile Include="PointTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TriangleTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PlanetaryMotion.Math\PlanetaryMotion.Math.csproj">
+    <ProjectReference Include="..\PlanetaryMotion.Math\PlanetaryMotion.Geometry.csproj">
       <Project>{6132e7ed-f1f8-4f52-af56-ef1243291886}</Project>
-      <Name>PlanetaryMotion.Math</Name>
+      <Name>PlanetaryMotion.Geometry</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

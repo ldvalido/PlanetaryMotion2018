@@ -7,8 +7,8 @@
     <ProjectGuid>{6132E7ED-F1F8-4F52-AF56-EF1243291886}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PlanetaryMotion.Math</RootNamespace>
-    <AssemblyName>PlanetaryMotion.Math</AssemblyName>
+    <RootNamespace>PlanetaryMotion.Geometry</RootNamespace>
+    <AssemblyName>PlanetaryMotion.Geometry</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,9 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Plane.cs" />
+    <Compile Include="GeometryConst.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
