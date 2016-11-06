@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Domain", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Model", "PlanetaryMotion.Model\PlanetaryMotion.Model.csproj", "{A7F4CEA5-1E7E-4CCB-94AD-3F65133A36B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Web", "PlanetaryMotion.Web\PlanetaryMotion.Web.csproj", "{AAC90879-A638-4DE1-A117-BEA1A6571EA0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Processes", "PlanetaryMotion.Processes\PlanetaryMotion.Processes.csproj", "{8E60DF85-E62F-41FF-A409-7CB3BAD46896}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Domain.Test", "PlanetaryMotion.Domain.Test\PlanetaryMotion.Domain.Test.csproj", "{148EF465-98A5-4E0A-AE1B-5B25BE0D055E}"
@@ -22,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Storage", "PlanetaryMotion.Storage\PlanetaryMotion.Storage.csproj", "{BAA4584F-60CA-4DA2-9B85-0B09A437A3C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.IOC", "PlanetaryMotion.IOC\PlanetaryMotion.IOC.csproj", "{6967690C-8DE0-401B-A621-0AF3E8C57E4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Web", "PlanetaryMotion.Web\PlanetaryMotion.Web.csproj", "{4C3927C7-840B-47D1-B17A-6E4413B1A056}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,6 @@ Global
 		{A7F4CEA5-1E7E-4CCB-94AD-3F65133A36B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7F4CEA5-1E7E-4CCB-94AD-3F65133A36B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7F4CEA5-1E7E-4CCB-94AD-3F65133A36B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AAC90879-A638-4DE1-A117-BEA1A6571EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AAC90879-A638-4DE1-A117-BEA1A6571EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AAC90879-A638-4DE1-A117-BEA1A6571EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AAC90879-A638-4DE1-A117-BEA1A6571EA0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8E60DF85-E62F-41FF-A409-7CB3BAD46896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8E60DF85-E62F-41FF-A409-7CB3BAD46896}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E60DF85-E62F-41FF-A409-7CB3BAD46896}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -65,6 +61,10 @@ Global
 		{6967690C-8DE0-401B-A621-0AF3E8C57E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6967690C-8DE0-401B-A621-0AF3E8C57E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6967690C-8DE0-401B-A621-0AF3E8C57E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C3927C7-840B-47D1-B17A-6E4413B1A056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C3927C7-840B-47D1-B17A-6E4413B1A056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C3927C7-840B-47D1-B17A-6E4413B1A056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C3927C7-840B-47D1-B17A-6E4413B1A056}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

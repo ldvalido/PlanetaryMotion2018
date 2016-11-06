@@ -55,6 +55,10 @@
       <Project>{A7F4CEA5-1E7E-4CCB-94AD-3F65133A36B5}</Project>
       <Name>PlanetaryMotion.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PlanetaryMotion.Storage\PlanetaryMotion.Storage.csproj">
+      <Project>{BAA4584F-60CA-4DA2-9B85-0B09A437A3C9}</Project>
+      <Name>PlanetaryMotion.Storage</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
