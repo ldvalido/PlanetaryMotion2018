@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace PlanetaryMotion.Geometry.Test
@@ -14,7 +15,7 @@ namespace PlanetaryMotion.Geometry.Test
             var p1 = new Point(10, 1);
             var p2 = new Point(-10, 1);
             var p3 = new Point(-20, 1);
-            var res = p1.AreAligned(p2,p3);
+            var res = p1.AreAligned( new List<Point> {p2,p3} );
             Assert.True(res);
         }
 
@@ -27,7 +28,7 @@ namespace PlanetaryMotion.Geometry.Test
             var p1 = new Point(0, 1);
             var p2 = new Point(1, 0);
             var p3 = new Point(2, 1);
-            var res = p1.AreAligned(p2,p3);
+            var res = p1.AreAligned(new List<Point> { p2, p3 });
             Assert.False(res);
         }
 

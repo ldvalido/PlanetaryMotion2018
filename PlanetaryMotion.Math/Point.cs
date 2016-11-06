@@ -1,11 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
+using PlanetaryMotion.Geometry.Extension;
 
 namespace PlanetaryMotion.Geometry
 {
     public class Point
     {
         #region Const
+        private const double Pi2 = Math.PI *2;
         private const double FromRadian = Math.PI / 180;
         #endregion
         #region C..tor        
@@ -56,10 +60,20 @@ namespace PlanetaryMotion.Geometry
         #endregion
 
         #region Public Methods
-        public bool AreAligned(Point point2,Point point3)
+        public bool AreAligned(params Point[] point)
         {
-            return (X == point2.X && X == point3.X) ||
-                   (Y == point2.Y && Y == point3.Y);
+            return AreAligned(point.ToList());
+        }
+        public bool AreAligned(IEnumerable<Point> points)
+        {
+            var polar = GetPolarCoordinates();
+            var res = points.FirstOrDefault(point =>
+            {
+                var pointPolar = point.GetPolarCoordinates();
+                var angle = polar.Phase - pointPolar.Phase;
+                return angle.IsMultiple(Pi2);
+            });
+            return res == null;
         }
         /// <summary>
         /// Moves the angle.
@@ -69,7 +83,7 @@ namespace PlanetaryMotion.Geometry
         {
             var polarCoordinates = GetPolarCoordinates();
             var finalAngle = polarCoordinates.Phase + angle * FromRadian;
-            var newPosition = Complex.FromPolarCoordinates(polarCoordinates.Real,finalAngle);
+            var newPosition = Complex.FromPolarCoordinates(polarCoordinates.Magnitude,finalAngle);
             return new Point(newPosition);
 
         }

@@ -40,7 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contract\IGalaxyService.cs" />
+    <Compile Include="Contract\IPlanetMovementService.cs" />
+    <Compile Include="Implementation\CircularMovementService.cs" />
+    <Compile Include="Implementation\GalaxyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlanetaryMotion.Math\PlanetaryMotion.Geometry.csproj">
+      <Project>{6132E7ED-F1F8-4F52-AF56-EF1243291886}</Project>
+      <Name>PlanetaryMotion.Geometry</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlanetaryMotion.Model\PlanetaryMotion.Model.csproj">
+      <Project>{A7F4CEA5-1E7E-4CCB-94AD-3F65133A36B5}</Project>
+      <Name>PlanetaryMotion.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PlanetaryMotion.Geometry
 {
@@ -54,7 +55,7 @@ namespace PlanetaryMotion.Geometry
         /// <param name="v2">The v2.</param>
         /// <param name="v3">The v3.</param>
         /// <returns></returns>
-        public bool BelongsToTriangle(Point point)
+        public bool Belongs(Point point)
         {
             var orientation1 = Orientation(point,Vertex1,Vertex2) < 0f;
             var orientation2 = Orientation(point, Vertex2, Vertex3) < 0f;

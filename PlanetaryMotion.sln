@@ -15,6 +15,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Model", "Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Web", "PlanetaryMotion.Web\PlanetaryMotion.Web.csproj", "{AAC90879-A638-4DE1-A117-BEA1A6571EA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Processes", "PlanetaryMotion.Processes\PlanetaryMotion.Processes.csproj", "{8E60DF85-E62F-41FF-A409-7CB3BAD46896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Domain.Test", "PlanetaryMotion.Domain.Test\PlanetaryMotion.Domain.Test.csproj", "{148EF465-98A5-4E0A-AE1B-5B25BE0D055E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.Storage", "PlanetaryMotion.Storage\PlanetaryMotion.Storage.csproj", "{BAA4584F-60CA-4DA2-9B85-0B09A437A3C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetaryMotion.IOC", "PlanetaryMotion.IOC\PlanetaryMotion.IOC.csproj", "{6967690C-8DE0-401B-A621-0AF3E8C57E4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,11 +49,28 @@ Global
 		{AAC90879-A638-4DE1-A117-BEA1A6571EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAC90879-A638-4DE1-A117-BEA1A6571EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAC90879-A638-4DE1-A117-BEA1A6571EA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E60DF85-E62F-41FF-A409-7CB3BAD46896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E60DF85-E62F-41FF-A409-7CB3BAD46896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E60DF85-E62F-41FF-A409-7CB3BAD46896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E60DF85-E62F-41FF-A409-7CB3BAD46896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{148EF465-98A5-4E0A-AE1B-5B25BE0D055E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{148EF465-98A5-4E0A-AE1B-5B25BE0D055E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{148EF465-98A5-4E0A-AE1B-5B25BE0D055E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{148EF465-98A5-4E0A-AE1B-5B25BE0D055E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAA4584F-60CA-4DA2-9B85-0B09A437A3C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAA4584F-60CA-4DA2-9B85-0B09A437A3C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAA4584F-60CA-4DA2-9B85-0B09A437A3C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAA4584F-60CA-4DA2-9B85-0B09A437A3C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6967690C-8DE0-401B-A621-0AF3E8C57E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6967690C-8DE0-401B-A621-0AF3E8C57E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6967690C-8DE0-401B-A621-0AF3E8C57E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6967690C-8DE0-401B-A621-0AF3E8C57E4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{73F82263-BC70-4532-B27B-E1A2603DC265} = {34EF4FFF-F09D-4263-B8FB-4785D8D39016}
+		{148EF465-98A5-4E0A-AE1B-5B25BE0D055E} = {34EF4FFF-F09D-4263-B8FB-4785D8D39016}
 	EndGlobalSection
 EndGlobal

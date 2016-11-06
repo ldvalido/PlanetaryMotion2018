@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extension\DoubleExtension.cs" />
     <Compile Include="GeometryConst.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rect.cs" />
     <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup />

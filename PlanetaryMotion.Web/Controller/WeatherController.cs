@@ -1,16 +1,20 @@
-﻿using System.Collections.Generic;
-using System.Web.Http;
+﻿using System.Web.Http;
+using PlanetaryMotion.Domain.Contract;
+using PlanetaryMotion.Model;
 
 namespace PlanetaryMotion.Web.Controller
 {
     [RoutePrefix("")]
     public class WeatherController : ApiController
     {
+        public IGalaxyService GalaxyService { get; set; } 
+
         // GET api/<controller>
-        [Route("clima")]
-        public IEnumerable<string> GetByDay()
+        [Route("clima/{day:int}")]
+        public WeatherHistory GetByDay(int day)
         {
-            return new string[] { "value1", "value2" };
+            var weatherCondition = GalaxyService.PredictWeather(day);
+            return new WeatherHistory {Day = day, Weather = weatherCondition};
         }
     }
 }

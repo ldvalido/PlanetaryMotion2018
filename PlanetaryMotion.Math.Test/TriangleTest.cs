@@ -31,7 +31,7 @@ namespace PlanetaryMotion.Geometry.Test
         {
             var triangle = new Triangle(new Point(0, 0), new Point(10, 0), new Point(0, 10));
             Assert.NotNull(triangle);
-            var resultBelongs = triangle.BelongsToTriangle(new Point(1, 1));
+            var resultBelongs = triangle.Belongs(new Point(1, 1));
             Assert.True(resultBelongs);
         }
 
@@ -41,7 +41,7 @@ namespace PlanetaryMotion.Geometry.Test
         {
             var triangle = new Triangle(new Point(0, 0), new Point(10, 0), new Point(0, 10));
             Assert.NotNull(triangle);
-            var resultBelongs = triangle.BelongsToTriangle(new Point(-1, -1));
+            var resultBelongs = triangle.Belongs(new Point(-1, -1));
             Assert.False(resultBelongs);
         }
     }
