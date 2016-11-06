@@ -1,19 +1,32 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Numerics;
 
-namespace PlanetaryMotion.Math
+namespace PlanetaryMotion.Geometry
 {
     public class Point
     {
+        #region Const
+        private const double FromRadian = Math.PI / 180;
+        #endregion
         #region C..tor        
         /// <summary>
         /// Initializes a new instance of the <see cref="Point"/> class.
         /// </summary>
         /// <param name="x">The x.</param>
         /// <param name="y">The y.</param>
-        public Point(int x, int y)
+        public Point(double x, double y)
         {
             X = x;
             Y = y;
+        }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Point"/> class.
+        /// </summary>
+        /// <param name="complex">The complex.</param>
+        private Point(Complex complex)
+        {
+            X = Math.Round(Math.Cos(complex.Phase) * complex.Magnitude, GeometryConst.CriteriaRound);
+            Y = Math.Round(Math.Sin(complex.Phase) * complex.Magnitude, GeometryConst.CriteriaRound);
         }
         #endregion
 
@@ -24,32 +37,43 @@ namespace PlanetaryMotion.Math
         /// <value>
         /// The x.
         /// </value>
-        public int X { get; set; }
+        public double X { get; set; }
         /// <summary>
         /// Gets or sets the y.
         /// </summary>
         /// <value>
         /// The y.
         /// </value>
-        public int Y { get; set; }
+        public double Y { get; set; }
+        #endregion
+
+        #region Auxiliar Methods
+
+        private Complex GetPolarCoordinates()
+        {
+            return Complex.FromPolarCoordinates(Math.Sqrt(X*X+Y*Y), Math.Atan2(Y, X));
+        }
         #endregion
 
         #region Public Methods
-
-        public bool IsAligned(Point anotherPoint)
+        public bool AreAligned(Point point2,Point point3)
         {
-            var anotherComplex =
-                Complex.FromPolarCoordinates(
-                    System.Math.Sqrt(anotherPoint.X*anotherPoint.X + anotherPoint.Y*anotherPoint.Y),
-                    System.Math.Atan2(anotherPoint.X,anotherPoint.Y));
-
-            var thisComplex = Complex.FromPolarCoordinates(System.Math.Sqrt(X * X + Y * Y), System.Math.Atan2(X, Y));
-
-            var diffPhase = System.Math.Abs(anotherComplex.Phase) - System.Math.Abs(thisComplex.Phase);
-
-            return System.Math.Round(diffPhase % (System.Math.PI*2), 15) == 0;
+            return (X == point2.X && X == point3.X) ||
+                   (Y == point2.Y && Y == point3.Y);
+        }
+        /// <summary>
+        /// Moves the angle.
+        /// </summary>
+        /// <param name="angle">The angle in grades.</param>
+        public Point MoveAngle(double angle)
+        {
+            var polarCoordinates = GetPolarCoordinates();
+            var finalAngle = polarCoordinates.Phase + angle * FromRadian;
+            var newPosition = Complex.FromPolarCoordinates(polarCoordinates.Real,finalAngle);
+            return new Point(newPosition);
 
         }
-    }
         #endregion
+    }
+
 }
