@@ -8,7 +8,7 @@ namespace PlanetaryMotion.Storage.Base
     {
         #region Astract Methods
 
-        private IQueryable<T> GetList()
+        private IEnumerable<T> GetList()
         {
             return new PlanetaryMotionContext().Set<T>();
         }

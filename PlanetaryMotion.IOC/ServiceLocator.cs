@@ -1,20 +1,34 @@
-﻿using Autofac;
+﻿using System;
+using System.Linq;
+using Autofac;
 
 namespace PlanetaryMotion.IOC
 {
-    public class ServiceLocator
+    public class ServiceLocatorFluent
     {
         #region Public Properties
-        static IContainer Container { get; set; }
+        static protected IContainer Container { get; set; }
+        #endregion
+        #region Private Properties
+
+        protected ContainerBuilder Builder;
         #endregion
         #region C..tor
 
-        public ServiceLocator()
+        public ServiceLocatorFluent()
         {
-            var builder = new ContainerBuilder();
-            builder.RegisterAssemblyTypes();
-            Container = builder.Build();
 
+        }
+        #endregion
+        #region Virtual Methods
+
+        public virtual IContainer CreateContainer<T>(T config)
+        {
+            var loadedAsm =
+                AppDomain.CurrentDomain.GetAssemblies();
+            Builder = new ContainerBuilder();
+            Builder.RegisterAssemblyTypes(loadedAsm);
+            return Builder.Build();
         }
         #endregion
         #region Public Methods

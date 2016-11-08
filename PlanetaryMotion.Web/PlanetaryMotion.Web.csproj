@@ -43,6 +43,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=4.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.2.0\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Autofac.Integration.WebApi, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.WebApi2.4.0.1\lib\net45\Autofac.Integration.WebApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -155,6 +163,10 @@
     <ProjectReference Include="..\PlanetaryMotion.Domain\PlanetaryMotion.Domain.csproj">
       <Project>{BCCA9B4A-B23F-4C37-AB28-8B53B091CDBC}</Project>
       <Name>PlanetaryMotion.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlanetaryMotion.IOC\PlanetaryMotion.IOC.csproj">
+      <Project>{6967690C-8DE0-401B-A621-0AF3E8C57E4C}</Project>
+      <Name>PlanetaryMotion.IOC</Name>
     </ProjectReference>
     <ProjectReference Include="..\PlanetaryMotion.Model\PlanetaryMotion.Model.csproj">
       <Project>{A7F4CEA5-1E7E-4CCB-94AD-3F65133A36B5}</Project>

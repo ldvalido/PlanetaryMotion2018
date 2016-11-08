@@ -7,12 +7,18 @@ namespace PlanetaryMotion.Web.Controllers
     [RoutePrefix("")]
     public class WeatherController : ApiController
     {
-        public IGalaxyService GalaxyService { get; set; }
+        readonly IGalaxyService _galaxyService;
+
         [Route("clima/{day:int}")]
         public WeatherHistory GetWeather(int day)
         {
-            var weatherCondition = GalaxyService.PredictWeather(day);
+            var weatherCondition = _galaxyService.PredictWeather(day);
             return new WeatherHistory { Day = day, Weather = weatherCondition };
+        }
+
+        public WeatherController(IGalaxyService galaxyService)
+        {
+            _galaxyService = galaxyService;
         }
     }
 }
