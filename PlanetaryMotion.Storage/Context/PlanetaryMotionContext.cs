@@ -8,6 +8,13 @@ namespace PlanetaryMotion.Storage
         internal DbSet<Galaxy> Galaxys { get; set; }
         internal DbSet<Planet> Planets { get; set; }
 
+        #region C...tor
+
+        public PlanetaryMotionContext() : base("PlanetaryMotionCnnStr")
+        {
+            
+        }
+        #endregion
         #region Overrides of DbContext
 
         /// <summary>
