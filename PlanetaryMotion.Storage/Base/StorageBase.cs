@@ -12,7 +12,7 @@ namespace PlanetaryMotion.Storage.Base
     /// <typeparam name="T"></typeparam>
     public abstract class StorageBase <T> where T: class
     {
-        private DbContext _ctx;
+        private readonly DbContext _ctx;
 
         #region C...tor
         public StorageBase()

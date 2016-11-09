@@ -22,9 +22,9 @@ namespace PlanetaryMotion.Processes
             {
                 var container = new ServiceLocatorFluent().CreateContainer<object>(null);
 
-                var application = container.Resolve<IProcessBase>();
+                var application = container.Resolve<IProcessManager>();
 
-                application.Execute(options);
+                application.ExecuteProcess(options);
             }
         }
     }

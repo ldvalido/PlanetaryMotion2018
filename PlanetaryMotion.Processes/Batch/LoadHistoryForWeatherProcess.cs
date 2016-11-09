@@ -26,21 +26,27 @@ namespace PlanetaryMotion.Processes.Batch
         /// The galaxy service.
         /// </value>
         public IGalaxyService GalaxyService { get; set; }
+
+        /// <summary>
+        /// Gets or sets the planet storage.
+        /// </summary>
+        /// <value>
+        /// The planet storage.
+        /// </value>
+        public PlanetStorage PlanetStorage { get; set; }
+
         #endregion
         #region Overrides of ProcessBase        
         /// <summary>
         /// Executes the specified option.
         /// </summary>
         /// <param name="option">The option.</param>
-        public void Execute(ProcessOption option)
+        public void Execute(int idExecution)
         {
-            for (var i = 0; i < option.Days; i++)
-            {
-                var weather = GalaxyService.PredictWeather(day: i);
-                var weatherHistory = new WeatherHistory { Day = i, Weather = weather };
-                WeatherHistoryStorage.Save(weatherHistory);
-
-            }
+            var planets = PlanetStorage.GetByCriteria(p => p.Galaxy.Id == GalaxyService.DefaultGalaxyId());
+            var weather = GalaxyService.PredictWeather(planets, day: idExecution);
+            var weatherHistory = new WeatherHistory { Day = idExecution, Weather = weather };
+            WeatherHistoryStorage.Save(weatherHistory);
         }
         #endregion
     }

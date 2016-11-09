@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Batch\IProcessBase.cs" />
+    <Compile Include="Batch\IProcessManager.cs" />
     <Compile Include="Batch\LoadHistoryForWeatherProcess.cs" />
+    <Compile Include="Option\ProcessManager.cs" />
     <Compile Include="Option\ProcessOption.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

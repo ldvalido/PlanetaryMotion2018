@@ -10,7 +10,7 @@ namespace PlanetaryMotion.Processes.Batch
         /// <summary>
         /// Executes the specified option.
         /// </summary>
-        /// <param name="option">The option.</param>
-        void Execute(ProcessOption option);
+        /// <param name="idExecution">The option.</param>
+        void Execute(int idExecution);
     }
 }

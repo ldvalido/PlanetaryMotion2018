@@ -67,9 +67,9 @@ namespace PlanetaryMotion.IOC
         /// </summary>
         void LoadAssemblies()
         {
-            foreach (Assembly assembly in AppDomain.CurrentDomain.GetAssemblies())
+            foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
             {
-                this.LoadReferencedAssembly(assembly);
+                LoadReferencedAssembly(assembly);
             }
         }
 

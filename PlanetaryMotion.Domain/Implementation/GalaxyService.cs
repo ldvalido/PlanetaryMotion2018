@@ -20,34 +20,19 @@ namespace PlanetaryMotion.Domain.Implementation
         /// The planet movement service.
         /// </value>
         public IPlanetMovementService PlanetMovementService { get; set; }
-        /// <summary>
-        /// Gets or sets the planet storage.
-        /// </summary>
-        /// <value>
-        /// The planet storage.
-        /// </value>
-        public PlanetStorage PlanetStorage { get; set; }
+
         #region Implementation of IGalaxyService        
+
         /// <summary>
         /// Predicts the weather.
         /// </summary>
-        /// <param name="day">The day.</param>
-        /// <returns></returns>
-        public WeatherCondition PredictWeather(int day)
-        {
-            return PredictWeather(day, 1);
-        }
-        /// <summary>
-        /// Predicts the weather.
-        /// </summary>
+        /// <param name="planets">The planets.</param>
         /// <param name="day">The day.</param>
         /// <param name="galaxyId">The galaxy identifier.</param>
         /// <returns></returns>
-        public WeatherCondition PredictWeather(int day, int galaxyId)
+        public WeatherCondition PredictWeather(IEnumerable<Planet> planets, int day)
         {
             var lstPoints = new List<Point>();
-
-            var planets = PlanetStorage.GetByCriteria(p => p.Galaxy.Id == galaxyId);
 
             foreach (var planet in planets)
             {
@@ -67,6 +52,14 @@ namespace PlanetaryMotion.Domain.Implementation
                 return triangle.Belongs(new Point(0, 0)) ? WeatherCondition.Rainy : WeatherCondition.Unknown;
             }
         }
+
+        /// <summary>
+        /// Gets or sets the default galaxy identifier.
+        /// </summary>
+        /// <value>
+        /// The default galaxy identifier.
+        /// </value>
+        public int DefaultGalaxyId() => 1;
 
         #endregion
     }

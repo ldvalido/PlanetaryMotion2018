@@ -1,4 +1,5 @@
-﻿using PlanetaryMotion.Model;
+﻿using System.Collections.Generic;
+using PlanetaryMotion.Model;
 
 namespace PlanetaryMotion.Domain.Contract
 {
@@ -7,18 +8,21 @@ namespace PlanetaryMotion.Domain.Contract
     /// </summary>
     public interface IGalaxyService
     {
+
         /// <summary>
         /// Predicts the weather.
         /// </summary>
+        /// <param name="planets">The planets.</param>
         /// <param name="day">The day.</param>
         /// <returns></returns>
-        WeatherCondition PredictWeather(int day);
+        WeatherCondition PredictWeather(IEnumerable<Planet> planets, int day);
+
         /// <summary>
-        /// Predicts the weather.
+        /// Gets or sets the default galaxy identifier.
         /// </summary>
-        /// <param name="day">The day.</param>
-        /// <param name="galaxyId">The galaxy identifier.</param>
-        /// <returns></returns>
-        WeatherCondition PredictWeather(int day, int galaxyId);
+        /// <value>
+        /// The default galaxy identifier.
+        /// </value>
+        int DefaultGalaxyId();
     }
 }

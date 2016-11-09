@@ -8,10 +8,8 @@ namespace PlanetaryMotion.Geometry
     public class Rect
     {
         #region Private Properties
-
-        private readonly Point _vertex1;
-        private readonly Point _vertex2;
-        private double a, b;
+        private readonly double _a;
+        private readonly double _b;
         #endregion
         #region C...tor        
         /// <summary>
@@ -21,12 +19,10 @@ namespace PlanetaryMotion.Geometry
         /// <param name="vertex2">The vertex2.</param>
         public Rect(Point vertex1, Point vertex2)
         {
-            _vertex1 = vertex1;
-            _vertex2 = vertex2;
             //(y-y1) / (y2-y1) = (x-x1) / (x2-x1)
             var factor = (vertex2.Y - vertex1.Y)/(vertex2.X - vertex1.X);
-            b = factor*vertex1.X - vertex1.Y;
-            a = factor;
+            _b = factor*vertex1.X - vertex1.Y;
+            _a = factor;
         }
         #endregion
         #region Public Method        
@@ -37,7 +33,7 @@ namespace PlanetaryMotion.Geometry
         /// <returns></returns>
         public bool Belongs(Point point)
         {
-            return Math.Round(point.Y,GeometryConst.CriteriaRound) == Math.Round(point.X*a + b,GeometryConst.CriteriaRound);
+            return Math.Round(point.Y,GeometryConst.CriteriaRound) == Math.Round(point.X*_a + _b,GeometryConst.CriteriaRound);
         }
         #endregion
     }

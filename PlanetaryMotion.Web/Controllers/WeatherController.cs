@@ -1,6 +1,7 @@
 ﻿using System.Web.Http;
 using PlanetaryMotion.Domain.Contract;
 using PlanetaryMotion.Model;
+using PlanetaryMotion.Storage.Implementation;
 
 namespace PlanetaryMotion.Web.Controllers
 {
@@ -9,6 +10,13 @@ namespace PlanetaryMotion.Web.Controllers
     {
         readonly IGalaxyService _galaxyService;
 
+                /// <summary>
+        /// Gets or sets the planet storage.
+        /// </summary>
+        /// <value>
+        /// The planet storage.
+        /// </value>
+        public PlanetStorage PlanetStorage { get; set; }
         /// <summary>
         /// Gets the weather.
         /// </summary>
@@ -17,7 +25,8 @@ namespace PlanetaryMotion.Web.Controllers
         [Route("clima/{day:int}")]
         public WeatherHistory GetWeather(int day)
         {
-            var weatherCondition = _galaxyService.PredictWeather(day);
+            var planets = PlanetStorage.GetByCriteria(p => p.Galaxy.Id == _galaxyService.DefaultGalaxyId());
+            var weatherCondition = _galaxyService.PredictWeather(planets, day);
             return new WeatherHistory { Day = day, Weather = weatherCondition };
         }
         /// <summary>
