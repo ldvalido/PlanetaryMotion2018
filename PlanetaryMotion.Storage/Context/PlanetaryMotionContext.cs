@@ -4,13 +4,38 @@ using PlanetaryMotion.Model;
 
 namespace PlanetaryMotion.Storage.Context
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="System.Data.Entity.DbContext" />
     public class PlanetaryMotionContext : DbContext
     {
+        /// <summary>
+        /// Gets or sets the galaxys.
+        /// </summary>
+        /// <value>
+        /// The galaxys.
+        /// </value>
         public DbSet<Galaxy> Galaxys { get; set; }
+        /// <summary>
+        /// Gets or sets the planets.
+        /// </summary>
+        /// <value>
+        /// The planets.
+        /// </value>
         public DbSet<Planet> Planets { get; set; }
+        /// <summary>
+        /// Gets or sets the weather history.
+        /// </summary>
+        /// <value>
+        /// The weather history.
+        /// </value>
         public DbSet<WeatherHistory> WeatherHistory { get; set; }
 
-        #region C...tor
+        #region C...tor        
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PlanetaryMotionContext"/> class.
+        /// </summary>
         public PlanetaryMotionContext() : base("PlanetaryMotionCnnStr")
         {
             DbConfiguration.SetConfiguration(new MySqlConfiguration.MySqlConfiguration());

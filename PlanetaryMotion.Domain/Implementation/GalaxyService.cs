@@ -7,17 +7,42 @@ using PlanetaryMotion.Storage.Implementation;
 
 namespace PlanetaryMotion.Domain.Implementation
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="PlanetaryMotion.Domain.Contract.IGalaxyService" />
     public class GalaxyService : IGalaxyService
     {
+        /// <summary>
+        /// Gets or sets the planet movement service.
+        /// </summary>
+        /// <value>
+        /// The planet movement service.
+        /// </value>
         public IPlanetMovementService PlanetMovementService { get; set; }
-
+        /// <summary>
+        /// Gets or sets the planet storage.
+        /// </summary>
+        /// <value>
+        /// The planet storage.
+        /// </value>
         public PlanetStorage PlanetStorage { get; set; }
-        #region Implementation of IGalaxyService
-
+        #region Implementation of IGalaxyService        
+        /// <summary>
+        /// Predicts the weather.
+        /// </summary>
+        /// <param name="day">The day.</param>
+        /// <returns></returns>
         public WeatherCondition PredictWeather(int day)
         {
             return PredictWeather(day, 1);
         }
+        /// <summary>
+        /// Predicts the weather.
+        /// </summary>
+        /// <param name="day">The day.</param>
+        /// <param name="galaxyId">The galaxy identifier.</param>
+        /// <returns></returns>
         public WeatherCondition PredictWeather(int day, int galaxyId)
         {
             var lstPoints = new List<Point>();

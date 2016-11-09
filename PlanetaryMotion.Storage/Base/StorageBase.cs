@@ -6,6 +6,10 @@ using PlanetaryMotion.Storage.Context;
 
 namespace PlanetaryMotion.Storage.Base
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class StorageBase <T> where T: class
     {
         private DbContext _ctx;

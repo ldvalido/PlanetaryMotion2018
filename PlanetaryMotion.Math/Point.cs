@@ -51,19 +51,32 @@ namespace PlanetaryMotion.Geometry
         public double Y { get; set; }
         #endregion
 
-        #region Auxiliar Methods
-
+        #region Auxiliar Methods        
+        /// <summary>
+        /// Gets the polar coordinates.
+        /// </summary>
+        /// <returns></returns>
         private Complex GetPolarCoordinates()
         {
             return Complex.FromPolarCoordinates(Math.Sqrt(X*X+Y*Y), Math.Atan2(Y, X));
         }
         #endregion
 
-        #region Public Methods
+        #region Public Methods        
+        /// <summary>
+        /// Ares the aligned.
+        /// </summary>
+        /// <param name="point">The point.</param>
+        /// <returns></returns>
         public bool AreAligned(params Point[] point)
         {
             return AreAligned(point.ToList());
         }
+        /// <summary>
+        /// Ares the aligned.
+        /// </summary>
+        /// <param name="points">The points.</param>
+        /// <returns></returns>
         public bool AreAligned(IEnumerable<Point> points)
         {
             var polar = GetPolarCoordinates();

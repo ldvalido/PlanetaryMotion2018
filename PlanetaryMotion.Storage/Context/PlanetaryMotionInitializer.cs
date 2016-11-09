@@ -4,7 +4,7 @@ using PlanetaryMotion.Model;
 
 namespace PlanetaryMotion.Storage.Context
 {
-    public class PlanetaryMotionInitializer : DropCreateDatabaseAlways<PlanetaryMotionContext>
+    public class PlanetaryMotionInitializer : DropCreateDatabaseIfModelChanges<PlanetaryMotionContext>
     {
         public PlanetaryMotionInitializer():base()
         {

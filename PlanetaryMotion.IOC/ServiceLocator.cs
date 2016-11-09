@@ -7,12 +7,20 @@ namespace PlanetaryMotion.IOC
 {
     public class ServiceLocatorFluent
     {
-        #region Public Properties
+        #region Public Properties        
+        /// <summary>
+        /// Gets or sets the container.
+        /// </summary>
+        /// <value>
+        /// The container.
+        /// </value>
         static protected IContainer Container { get; set; }
         #endregion
 
-        #region Private Properties
-
+        #region Private Properties        
+        /// <summary>
+        /// The builder
+        /// </summary>
         protected ContainerBuilder Builder;
         #endregion
 
@@ -53,7 +61,10 @@ namespace PlanetaryMotion.IOC
         }
         #endregion
 
-        #region Private Methods
+        #region Private Methods        
+        /// <summary>
+        /// Loads the assemblies.
+        /// </summary>
         void LoadAssemblies()
         {
             foreach (Assembly assembly in AppDomain.CurrentDomain.GetAssemblies())
@@ -62,6 +73,10 @@ namespace PlanetaryMotion.IOC
             }
         }
 
+        /// <summary>
+        /// Loads the referenced assembly.
+        /// </summary>
+        /// <param name="assembly">The assembly.</param>
         void LoadReferencedAssembly(Assembly assembly)
         {
             foreach (var name in assembly.GetReferencedAssemblies())
@@ -74,8 +89,12 @@ namespace PlanetaryMotion.IOC
         }
         #endregion
 
-        #region Public Methods
-
+        #region Public Methods        
+        /// <summary>
+        /// Resolves this instance.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         public T Resolve<T>()
         {
             return Container.Resolve<T>();

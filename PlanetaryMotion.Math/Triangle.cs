@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace PlanetaryMotion.Geometry
 {
@@ -30,7 +29,14 @@ namespace PlanetaryMotion.Geometry
         public Point Vertex3 { get; set; }
         #endregion
 
-        #region C...tor
+        #region C...tor        
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Triangle"/> class.
+        /// </summary>
+        /// <param name="vertex1">The vertex1.</param>
+        /// <param name="vertex2">The vertex2.</param>
+        /// <param name="vertex3">The vertex3.</param>
+        /// <exception cref="ArgumentException">The points are aligned and the triangle cannot be built</exception>
         public Triangle(Point vertex1, Point vertex2, Point vertex3)
         {
             if (!vertex1.AreAligned(vertex2,vertex3))

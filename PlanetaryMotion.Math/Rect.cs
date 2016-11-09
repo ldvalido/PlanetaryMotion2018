@@ -13,7 +13,12 @@ namespace PlanetaryMotion.Geometry
         private readonly Point _vertex2;
         private double a, b;
         #endregion
-        #region C...tor
+        #region C...tor        
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Rect"/> class.
+        /// </summary>
+        /// <param name="vertex1">The vertex1.</param>
+        /// <param name="vertex2">The vertex2.</param>
         public Rect(Point vertex1, Point vertex2)
         {
             _vertex1 = vertex1;
@@ -24,8 +29,12 @@ namespace PlanetaryMotion.Geometry
             a = factor;
         }
         #endregion
-        #region Public Method
-
+        #region Public Method        
+        /// <summary>
+        /// Belongses the specified point.
+        /// </summary>
+        /// <param name="point">The point.</param>
+        /// <returns></returns>
         public bool Belongs(Point point)
         {
             return Math.Round(point.Y,GeometryConst.CriteriaRound) == Math.Round(point.X*a + b,GeometryConst.CriteriaRound);

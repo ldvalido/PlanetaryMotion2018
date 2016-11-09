@@ -1,5 +1,8 @@
 ﻿namespace PlanetaryMotion.Model
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class WeatherHistory
     {
         /// <summary>

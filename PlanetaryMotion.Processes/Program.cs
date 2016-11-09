@@ -5,8 +5,15 @@ using PlanetaryMotion.Processes.Option;
 
 namespace PlanetaryMotion.Processes
 {
+    /// <summary>
+    /// 
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Mains the specified arguments.
+        /// </summary>
+        /// <param name="args">The arguments.</param>
         static void Main(string[] args)
         {
 

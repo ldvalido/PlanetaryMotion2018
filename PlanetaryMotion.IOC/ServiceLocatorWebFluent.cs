@@ -5,6 +5,10 @@ using Autofac.Integration.WebApi;
 
 namespace PlanetaryMotion.IOC
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="PlanetaryMotion.IOC.ServiceLocatorFluent" />
     public class ServiceLocatorWebFluent : ServiceLocatorFluent
     {
         #region Overrides of ServiceLocatorFluent
