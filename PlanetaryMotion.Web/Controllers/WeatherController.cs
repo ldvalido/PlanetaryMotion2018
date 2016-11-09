@@ -5,6 +5,10 @@ using PlanetaryMotion.Storage.Implementation;
 
 namespace PlanetaryMotion.Web.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="System.Web.Http.ApiController" />
     [RoutePrefix("")]
     public class WeatherController : ApiController
     {

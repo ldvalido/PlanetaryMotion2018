@@ -2,6 +2,9 @@
 
 namespace PlanetaryMotion.Geometry
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Triangle
     {
 
@@ -57,9 +60,6 @@ namespace PlanetaryMotion.Geometry
         /// Belongses to triangle.
         /// </summary>
         /// <param name="point">The point.</param>
-        /// <param name="v1">The v1.</param>
-        /// <param name="v2">The v2.</param>
-        /// <param name="v3">The v3.</param>
         /// <returns></returns>
         public bool Belongs(Point point)
         {

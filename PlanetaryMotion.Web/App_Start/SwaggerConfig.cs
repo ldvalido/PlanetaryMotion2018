@@ -7,8 +7,14 @@ using Swashbuckle.Application;
 
 namespace PlanetaryMotion.Web
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class SwaggerConfig
     {
+        /// <summary>
+        /// Registers this instance.
+        /// </summary>
         public static void Register()
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;

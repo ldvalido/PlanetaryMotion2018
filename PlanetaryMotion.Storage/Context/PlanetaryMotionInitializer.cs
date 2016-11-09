@@ -4,13 +4,25 @@ using PlanetaryMotion.Model;
 
 namespace PlanetaryMotion.Storage.Context
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="System.Data.Entity.DropCreateDatabaseIfModelChanges{PlanetaryMotion.Storage.Context.PlanetaryMotionContext}" />
     public class PlanetaryMotionInitializer : DropCreateDatabaseIfModelChanges<PlanetaryMotionContext>
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PlanetaryMotionInitializer"/> class.
+        /// </summary>
         public PlanetaryMotionInitializer():base()
         {
             
         }
-        
+
+        /// <summary>
+        /// A method that should be overridden to actually add data to the context for seeding.
+        /// The default implementation does nothing.
+        /// </summary>
+        /// <param name="context">The context to seed.</param>
         protected override void Seed(PlanetaryMotionContext context)
         {
             IList<Planet> planets = new List<Planet>

@@ -16,6 +16,12 @@ namespace PlanetaryMotion.Processes.Option
         /// </value>
         [Option('d',"days",Required=false,HelpText = "Indicates the quantity of days for the calculation",DefaultValue = 10*365)]
         public int Days { get; set; }
+        /// <summary>
+        /// Gets or sets the delivery resume.
+        /// </summary>
+        /// <value>
+        /// The delivery resume.
+        /// </value>
         [Option('p',"progress",Required = false,HelpText = "Indicates the quantity of execution to show progress",DefaultValue = 100)]
         public int DeliveryResume { get; set; }
         /// <summary>

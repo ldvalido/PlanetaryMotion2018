@@ -28,7 +28,6 @@ namespace PlanetaryMotion.Domain.Implementation
         /// </summary>
         /// <param name="planets">The planets.</param>
         /// <param name="day">The day.</param>
-        /// <param name="galaxyId">The galaxy identifier.</param>
         /// <returns></returns>
         public WeatherCondition PredictWeather(IEnumerable<Planet> planets, int day)
         {

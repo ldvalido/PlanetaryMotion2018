@@ -36,11 +36,11 @@ namespace PlanetaryMotion.Processes.Batch
         public PlanetStorage PlanetStorage { get; set; }
 
         #endregion
-        #region Overrides of ProcessBase        
+        #region Overrides of ProcessBase                
         /// <summary>
         /// Executes the specified option.
         /// </summary>
-        /// <param name="option">The option.</param>
+        /// <param name="idExecution">The option.</param>
         public void Execute(int idExecution)
         {
             var planets = PlanetStorage.GetByCriteria(p => p.Galaxy.Id == GalaxyService.DefaultGalaxyId());

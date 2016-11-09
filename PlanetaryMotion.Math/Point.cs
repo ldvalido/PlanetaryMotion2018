@@ -6,6 +6,9 @@ using PlanetaryMotion.Geometry.Extension;
 
 namespace PlanetaryMotion.Geometry
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Point
     {
         #region Const

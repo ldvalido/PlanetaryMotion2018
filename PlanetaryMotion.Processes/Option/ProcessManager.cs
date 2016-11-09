@@ -4,6 +4,10 @@ using PlanetaryMotion.Processes.Batch;
 
 namespace PlanetaryMotion.Processes.Option
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="PlanetaryMotion.Processes.Batch.IProcessManager" />
     public class ProcessManager : IProcessManager
     {
         #region Process Base        

@@ -17,7 +17,6 @@
     <ContentFile FileName="PlanetaryMotion.IOC.dxc" Moniker="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.IOC.dll" DocType="DX.NET" />
     <ContentFile FileName="PlanetaryMotion.Model.dxc" Moniker="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Model.dll" DocType="DX.NET" />
     <ContentFile FileName="PlanetaryMotion.Storage.dxc" Moniker="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Storage.dll" DocType="DX.NET" />
-    <ContentFile FileName="PlanetaryMotion.Web.dxc" Moniker="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Web.dll" DocType="DX.NET" />
     <ContentFile FileName="PlanetaryMotion.Processes.dxc" Moniker="..\..\PlanetaryMotion.Processes\bin\Debug\PlanetaryMotion.Processes.exe" DocType="DX.NET" />
   </ContentFiles>
   <AutoDocFiles />
@@ -38,7 +37,6 @@
     <Assembly FileName="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.IOC.dll" RootTypeName="" />
     <Assembly FileName="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Model.dll" RootTypeName="" />
     <Assembly FileName="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Storage.dll" RootTypeName="" />
-    <Assembly FileName="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Web.dll" RootTypeName="" />
     <Assembly FileName="..\..\PlanetaryMotion.Processes\bin\Debug\PlanetaryMotion.Processes.exe" RootTypeName="" />
   </DotNetAssemblies>
   <DatabaseProjectPlugin>

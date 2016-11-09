@@ -5,6 +5,9 @@ using Autofac;
 
 namespace PlanetaryMotion.IOC
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ServiceLocatorFluent
     {
         #region Public Properties        
