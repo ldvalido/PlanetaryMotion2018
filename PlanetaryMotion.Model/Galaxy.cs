@@ -13,18 +13,18 @@ namespace PlanetaryMotion.Model
         /// </value>
         public int Id { get; set; }
         /// <summary>
+        /// Gets or sets the name.
+        /// </summary>
+        /// <value>
+        /// The name.
+        /// </value>
+        public string Name { get; set; }
+        /// <summary>
         /// Gets or sets the planets.
         /// </summary>
         /// <value>
         /// The planets.
         /// </value>
-        public IEnumerable<Planet> Planets { get; set; }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Galaxy"/> class.
-        /// </summary>
-        public Galaxy()
-        {
-            Planets = new List<Planet>();
-        }
+        public ICollection<Planet> Planets { get; set; }
     }
 }

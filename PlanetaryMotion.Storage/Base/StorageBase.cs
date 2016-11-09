@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using PlanetaryMotion.Storage.Context;
 
 namespace PlanetaryMotion.Storage.Base
 {
@@ -8,7 +9,7 @@ namespace PlanetaryMotion.Storage.Base
     {
         #region Astract Methods
 
-        private IEnumerable<T> GetList()
+        protected virtual IEnumerable<T> GetList()
         {
             return new PlanetaryMotionContext().Set<T>();
         }

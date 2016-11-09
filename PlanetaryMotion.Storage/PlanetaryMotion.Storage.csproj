@@ -59,9 +59,12 @@
   <ItemGroup>
     <Compile Include="Base\StorageBase.cs" />
     <Compile Include="Context\PlanetaryMotionContext.cs" />
+    <Compile Include="Context\PlanetaryMotionInitializer.cs" />
     <Compile Include="Implementation\GalaxyStorage.cs" />
     <Compile Include="Implementation\PlanetStorage.cs" />
     <Compile Include="Implementation\WeatherHistoryStorage.cs" />
+    <Compile Include="MySqlConfiguration\MySqlConfiguration.cs" />
+    <Compile Include="MySqlConfiguration\MySqlHistoryContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

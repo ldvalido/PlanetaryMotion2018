@@ -1,18 +1,19 @@
 ﻿using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using PlanetaryMotion.Model;
 
-namespace PlanetaryMotion.Storage
+namespace PlanetaryMotion.Storage.Context
 {
     public class PlanetaryMotionContext : DbContext
     {
-        internal DbSet<Galaxy> Galaxys { get; set; }
-        internal DbSet<Planet> Planets { get; set; }
+        public DbSet<Galaxy> Galaxys { get; set; }
+        public DbSet<Planet> Planets { get; set; }
 
         #region C...tor
-
         public PlanetaryMotionContext() : base("PlanetaryMotionCnnStr")
         {
-            Database.SetInitializer(new CreateDatabaseIfNotExists<PlanetaryMotionContext>());
+            DbConfiguration.SetConfiguration(new MySqlConfiguration.MySqlConfiguration());
+            Database.SetInitializer(new PlanetaryMotionInitializer());
         }
         #endregion
         #region Overrides of DbContext
@@ -33,9 +34,9 @@ namespace PlanetaryMotion.Storage
         /// <param name="modelBuilder">The builder that defines the model for the context being created. </param>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             base.OnModelCreating(modelBuilder);
         }
-
         #endregion
     }
 }

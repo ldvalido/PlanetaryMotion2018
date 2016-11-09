@@ -31,7 +31,7 @@ namespace PlanetaryMotion.Domain.Implementation
                 lstPoints.Add(finalPoint);
             }
             
-            if (lstPoints.First().AreAligned(lstPoints))
+            if (lstPoints.First().AreAligned(lstPoints.Skip(1)))
             {
                 var rect = new Rect(lstPoints.First(), lstPoints.Last());
                 return rect.Belongs(new Point(0, 0)) ? WeatherCondition.Drought : WeatherCondition.STP;
