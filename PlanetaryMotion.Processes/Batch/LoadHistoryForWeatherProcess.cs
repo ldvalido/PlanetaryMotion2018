@@ -5,7 +5,7 @@ using PlanetaryMotion.Storage.Implementation;
 
 namespace PlanetaryMotion.Processes.Batch
 {
-    public class LoadHistoryForWeatherProcess : ProcessBase
+    public class LoadHistoryForWeatherProcess : IProcessBase
     {
         #region Public Properties
         public WeatherHistoryStorage WeatherHistoryStorage { get; set; }
@@ -13,7 +13,7 @@ namespace PlanetaryMotion.Processes.Batch
         #endregion
         #region Overrides of ProcessBase
 
-        public override void Execute(ProcessOption option)
+        public void Execute(ProcessOption option)
         {
             for (var i = 0; i < option.Days; i++)
             {

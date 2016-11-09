@@ -1,5 +1,4 @@
-﻿using System;
-using Autofac;
+﻿using Autofac;
 using PlanetaryMotion.IOC;
 using PlanetaryMotion.Processes.Batch;
 using PlanetaryMotion.Processes.Option;
@@ -16,7 +15,7 @@ namespace PlanetaryMotion.Processes
             {
                 var container = new ServiceLocatorFluent().CreateContainer<object>(null);
 
-                var application = container.Resolve<ProcessBase>();
+                var application = container.Resolve<IProcessBase>();
 
                 application.Execute(options);
             }

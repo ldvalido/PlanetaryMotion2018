@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Reflection;
 using System.Web.Http;
 using Autofac;
 using Autofac.Integration.WebApi;
@@ -10,21 +9,18 @@ namespace PlanetaryMotion.IOC
     {
         #region Overrides of ServiceLocatorFluent
 
-        public override IContainer CreateContainer<T>(T config)
+        /// <summary>
+        /// Called when [create container].
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="builder">The builder.</param>
+        /// <param name="loadedAssemblies">The loaded assemblies.</param>
+        /// <param name="config">The configuration.</param>
+        protected override void OnCreateContainer<T>(ContainerBuilder builder, Assembly[] loadedAssemblies, T config)
         {
-            var loadedAsm = AppDomain.CurrentDomain.GetAssemblies()
-                    .Where(asm => asm.FullName.ToLowerInvariant().Contains("planetarymotion"))
-                    .ToArray();
-            var httpConfig = config as HttpConfiguration;
-            Builder = new ContainerBuilder();
-            Builder.RegisterAssemblyTypes(loadedAsm)
-                .AsImplementedInterfaces()
-                .AsSelf()
-                .InstancePerDependency().
-                PropertiesAutowired();
-            Builder.RegisterApiControllers(loadedAsm).PropertiesAutowired();
-            Builder.RegisterWebApiFilterProvider(httpConfig);
-            return Builder.Build(); 
+            var httpConfiguration = config as HttpConfiguration;
+            Builder.RegisterApiControllers(loadedAssemblies).PropertiesAutowired();
+            Builder.RegisterWebApiFilterProvider(httpConfiguration);
         }
 
         #endregion

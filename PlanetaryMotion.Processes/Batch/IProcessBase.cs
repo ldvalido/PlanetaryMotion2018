@@ -2,8 +2,8 @@
 
 namespace PlanetaryMotion.Processes.Batch
 {
-    public abstract class ProcessBase
+    public interface IProcessBase
     {
-        public abstract void Execute(ProcessOption option);
+        void Execute(ProcessOption option);
     }
 }

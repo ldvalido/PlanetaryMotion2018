@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Batch\ProcessBase.cs" />
+    <Compile Include="Batch\IProcessBase.cs" />
     <Compile Include="Batch\LoadHistoryForWeatherProcess.cs" />
     <Compile Include="Option\ProcessOption.cs" />
     <Compile Include="Program.cs" />

@@ -8,6 +8,7 @@ namespace PlanetaryMotion.Storage.Context
     {
         public DbSet<Galaxy> Galaxys { get; set; }
         public DbSet<Planet> Planets { get; set; }
+        public DbSet<WeatherHistory> WeatherHistory { get; set; }
 
         #region C...tor
         public PlanetaryMotionContext() : base("PlanetaryMotionCnnStr")
@@ -35,6 +36,7 @@ namespace PlanetaryMotion.Storage.Context
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Entity<WeatherHistory>().HasKey(w => w.Day);
             base.OnModelCreating(modelBuilder);
         }
         #endregion
