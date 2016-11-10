@@ -1,10 +1,11 @@
-3 - Verify Points Aligment
-4- Verify SonarQube
-5- Verify el new PlanetanoryMotionDbContext.cs
 2 - Siempre el mismo resultado
-1 - Deploy
-6.- Update Readme
+3 - Verify Points Aligment
+4 - Verify SonarQube
+5 - Verify el new PlanetanoryMotionDbContext.cs
+6 - Stats
+7 - Update Readme
 ---
 Done
 Emprolijar IOC
 Make Documentation File
+Deploy
