@@ -11,13 +11,13 @@ El otro componente, es un proceso batch que permite hacer la carga historica de 
 El unit testing realizado básicamente se realizo sobre la parcialidad matemática del proyecto a fin de poder verificar el core del sistema. La Librería utilizada para esta serie de chequeos fue xUnit (https://xunit.github.io/).
 # Frameworks
 Los frameworks mas importantes utilizados en la aplicación son los que se detallan a continuación.
-Autofac
-Autofac para integración con WebAPI
-CommandLineParser
-EntityFramework
-NewtonSoft
-Swagger (o Swashbuckle)
-xUnit
+* Autofac (https://autofac.org/)
+* Autofac para integración con WebAPI (https://autofac.org/)
+* CommandLineParser (https://commandline.codeplex.com/)
+* EntityFramework (https://www.asp.net/entity-framework)
+* NewtonSoft (http://www.newtonsoft.com/json)
+* Swagger (o Swashbuckle) (http://swagger.io/)
+* xUnit (https://xunit.github.io/)
 # Dependencias externas
 Debido a los issues existentes de compatiblidad entre MySQL 5.x y Entity Framework en la funcionalidad de migración de base de datos se decidió utilizar la solución ya establecida en el repositorio destinada a tal fin (https://github.com/ldvalido/DDS-ORM).
 # SonarQube
