@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using PlanetaryMotion.Model;
 using PlanetaryMotion.Storage.Base;
-using PlanetaryMotion.Storage.Context;
 
 namespace PlanetaryMotion.Storage.Implementation
 {
@@ -18,7 +17,7 @@ namespace PlanetaryMotion.Storage.Implementation
         /// <returns></returns>
         protected override IEnumerable<Planet> GetList()
         {
-            return new PlanetaryMotionContext().Set<Planet>().Include("Galaxy");
+            return DbContext.Set<Planet>().Include("Galaxy");
         }
 
         #endregion

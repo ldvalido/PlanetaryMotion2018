@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using PlanetaryMotion.Storage.Context;
 
@@ -12,18 +11,14 @@ namespace PlanetaryMotion.Storage.Base
     /// <typeparam name="T"></typeparam>
     public abstract class StorageBase <T> where T: class
     {
-        private readonly DbContext _ctx;
-
-        #region C...tor        
         /// <summary>
-        /// Initializes a new instance of the <see cref="StorageBase{T}"/> class.
+        /// Gets or sets the database context.
         /// </summary>
-        public StorageBase()
-        {
-            _ctx = new PlanetaryMotionContext();
-        }
-        #endregion
-
+        /// <value>
+        /// The database context.
+        /// </value>
+        public PlanetaryMotionContext DbContext { get; set; }
+        
         #region Astract Methods        
         /// <summary>
         /// Gets the list.
@@ -31,7 +26,7 @@ namespace PlanetaryMotion.Storage.Base
         /// <returns></returns>
         protected virtual IEnumerable<T> GetList()
         {
-            return _ctx.Set<T>();
+            return DbContext.Set<T>();
         }
         #endregion
 
@@ -42,8 +37,8 @@ namespace PlanetaryMotion.Storage.Base
         /// <param name="element">The element.</param>
         public void Save(T element)
         {
-            _ctx.Set<T>().Add(element);
-            _ctx.SaveChanges();
+            DbContext.Set<T>().Add(element);
+            DbContext.SaveChanges();
         }
         /// <summary>
         /// Removes the specified element.
@@ -51,8 +46,8 @@ namespace PlanetaryMotion.Storage.Base
         /// <param name="element">The element.</param>
         public void Remove(T element)
         {
-            _ctx.Set<T>().Remove(element);
-            _ctx.SaveChanges();
+            DbContext.Set<T>().Remove(element);
+            DbContext.SaveChanges();
         }
         /// <summary>
         /// Gets all.
