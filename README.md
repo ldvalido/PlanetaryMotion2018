@@ -18,6 +18,7 @@ Los frameworks mas importantes utilizados en la aplicación son los que se detal
 * NewtonSoft (http://www.newtonsoft.com/json)
 * Swagger (o Swashbuckle) (http://swagger.io/)
 * xUnit (https://xunit.github.io/)
+
 # Dependencias externas
 Debido a los issues existentes de compatiblidad entre MySQL 5.x y Entity Framework en la funcionalidad de migración de base de datos se decidió utilizar la solución ya establecida en el repositorio destinada a tal fin (https://github.com/ldvalido/DDS-ORM).
 # SonarQube
