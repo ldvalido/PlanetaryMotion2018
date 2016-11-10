@@ -44,7 +44,8 @@
     <Compile Include="Model\Galaxy.cs" />
     <Compile Include="Model\Planet.cs" />
     <Compile Include="Model\WeatherCondition.cs" />
-    <Compile Include="Poco\StatsPoco.cs" />
+    <Compile Include="Dto\StatsDto.cs" />
+    <Compile Include="Poco\WeatherPredictionResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\WeatherHistory.cs" />
   </ItemGroup>

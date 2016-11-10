@@ -4,6 +4,7 @@ using PlanetaryMotion.Domain.Contract;
 using PlanetaryMotion.Geometry;
 using PlanetaryMotion.Model;
 using PlanetaryMotion.Model.Model;
+using PlanetaryMotion.Model.Poco;
 using PlanetaryMotion.Storage.Implementation;
 
 namespace PlanetaryMotion.Domain.Implementation
@@ -30,10 +31,9 @@ namespace PlanetaryMotion.Domain.Implementation
         /// <param name="planets">The planets.</param>
         /// <param name="day">The day.</param>
         /// <returns></returns>
-        public WeatherCondition PredictWeather(IEnumerable<Planet> planets, int day)
+        public WeatherPredictionResult PredictWeather(IEnumerable<Planet> planets, int day)
         {
             var lstPoints = new List<Point>();
-
             foreach (var planet in planets)
             {
                 var startPoint = new Point(0,planet.Radious);
@@ -44,12 +44,21 @@ namespace PlanetaryMotion.Domain.Implementation
             if (lstPoints.First().AreAligned(lstPoints.Skip(1)))
             {
                 var rect = new Rect(lstPoints.First(), lstPoints.Last());
-                return rect.Belongs(new Point(0, 0)) ? WeatherCondition.Drought : WeatherCondition.STP;
+                return new WeatherPredictionResult
+                {
+                    WeatherCondition = rect.Belongs(new Point(0, 0)) ? WeatherCondition.Drought : WeatherCondition.STP,
+                    TrianglePerimeter = null
+                };
             }
             else
             {
                 var triangle = new Triangle(lstPoints[0],lstPoints[1],lstPoints[2]);
-                return triangle.Belongs(new Point(0, 0)) ? WeatherCondition.Rainy : WeatherCondition.Unknown;
+                return new WeatherPredictionResult
+                {
+                    WeatherCondition =
+                        triangle.Belongs(new Point(0, 0)) ? WeatherCondition.Rainy : WeatherCondition.Unknown,
+                    TrianglePerimeter = new Triangle(lstPoints[0], lstPoints[1], lstPoints[2]).GetPerimeter()
+                };
             }
         }
 

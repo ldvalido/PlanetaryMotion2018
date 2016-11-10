@@ -1,7 +1,5 @@
 ﻿using PlanetaryMotion.Domain.Contract;
-using PlanetaryMotion.Model;
 using PlanetaryMotion.Model.Model;
-using PlanetaryMotion.Processes.Option;
 using PlanetaryMotion.Storage.Implementation;
 
 namespace PlanetaryMotion.Processes.Batch
@@ -45,10 +43,25 @@ namespace PlanetaryMotion.Processes.Batch
         public void Execute(int idExecution)
         {
             var planets = PlanetStorage.GetByCriteria(p => p.Galaxy.Id == GalaxyService.DefaultGalaxyId());
-            var weather = GalaxyService.PredictWeather(planets, day: idExecution);
-            var weatherHistory = new WeatherHistory { Day = idExecution, Weather = weather };
+            var predictionResult = GalaxyService.PredictWeather(planets, day: idExecution);
+            var weatherHistory = new WeatherHistory { Day = idExecution, Weather = predictionResult.WeatherCondition,TrianglePerimeter = predictionResult.TrianglePerimeter};
             WeatherHistoryStorage.Save(weatherHistory);
         }
+
+        /// <summary>
+        /// Determines whether [has unique execution].
+        /// </summary>
+        /// <returns>
+        ///   <c>true</c> if [has unique execution]; otherwise, <c>false</c>.
+        /// </returns>
+        public bool HasUniqueExecution() => false;
+
+        /// <summary>
+        /// Executions the key.
+        /// </summary>
+        /// <returns></returns>
+        public string ExecutionKey() => "InitialLoading";
+
         #endregion
     }
 }

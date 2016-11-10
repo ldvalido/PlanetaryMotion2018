@@ -1,4 +1,4 @@
-﻿using PlanetaryMotion.Model.Poco;
+﻿using PlanetaryMotion.Model.Dto;
 
 namespace PlanetaryMotion.Domain.Contract
 {
@@ -11,6 +11,6 @@ namespace PlanetaryMotion.Domain.Contract
         /// Gets the stats.
         /// </summary>
         /// <returns></returns>
-        StatsPoco GetStats();
+        StatsDto GetStats();
     }
 }

@@ -56,10 +56,16 @@
     <ManifestKeyFile>PlanetaryMotion.Processes_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac, Version=4.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
@@ -83,7 +89,8 @@
     <Compile Include="Batch\IProcessBase.cs" />
     <Compile Include="Batch\IProcessManager.cs" />
     <Compile Include="Batch\LoadHistoryForWeatherProcess.cs" />
-    <Compile Include="Option\ProcessManager.cs" />
+    <Compile Include="Batch\StatsProcess.cs" />
+    <Compile Include="Batch\ProcessManager.cs" />
     <Compile Include="Option\ProcessOption.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,6 +99,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="PlanetaryMotion.Processes_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PlanetaryMotion.Domain\PlanetaryMotion.Domain.csproj">

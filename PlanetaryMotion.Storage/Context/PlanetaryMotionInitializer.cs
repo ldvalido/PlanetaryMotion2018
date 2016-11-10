@@ -9,7 +9,7 @@ namespace PlanetaryMotion.Storage.Context
     /// 
     /// </summary>
     /// <seealso cref="System.Data.Entity.DropCreateDatabaseIfModelChanges{PlanetaryMotion.Storage.Context.PlanetaryMotionContext}" />
-    public class PlanetaryMotionInitializer : DropCreateDatabaseIfModelChanges<PlanetaryMotionContext>
+    public class PlanetaryMotionInitializer : DropCreateDatabaseAlways<PlanetaryMotionContext>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="PlanetaryMotionInitializer"/> class.

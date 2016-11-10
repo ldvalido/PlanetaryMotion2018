@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 using PlanetaryMotion.Domain.Contract;
-using PlanetaryMotion.Model.Poco;
+using PlanetaryMotion.Model.Dto;
 
 namespace PlanetaryMotion.Web.Controllers
 {
@@ -20,7 +20,7 @@ namespace PlanetaryMotion.Web.Controllers
         /// </summary>
         /// <returns></returns>
         [Route("stats")]
-        public StatsPoco GetStats()
+        public StatsDto GetStats()
         {
             return _weatherHistoryService.GetStats();
         }

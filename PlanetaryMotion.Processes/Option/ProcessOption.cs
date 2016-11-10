@@ -9,6 +9,14 @@ namespace PlanetaryMotion.Processes.Option
     public class ProcessOption
     {
         /// <summary>
+        /// Gets or sets the batch.
+        /// </summary>
+        /// <value>
+        /// The batch.
+        /// </value>
+        [Option('b',"Batch",Required = true, HelpText = "Indicates the process to execute")]
+        public string Batch { get; set; }
+        /// <summary>
         /// Gets or sets the days.
         /// </summary>
         /// <value>

@@ -24,7 +24,7 @@ namespace PlanetaryMotion.Processes
 
                 var application = container.Resolve<IProcessManager>();
 
-                application.ExecuteProcess(options);
+                application.ExecuteProcess(container, options);
             }
         }
     }

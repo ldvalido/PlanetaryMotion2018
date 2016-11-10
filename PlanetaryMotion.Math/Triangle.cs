@@ -55,7 +55,18 @@ namespace PlanetaryMotion.Geometry
         }
         #endregion
 
-        #region Methods  
+        #region Methods        
+        /// <summary>
+        /// Gets the perimeter.
+        /// </summary>
+        /// <returns></returns>
+        public double GetPerimeter()
+        {
+            var r1 = new Rect(Vertex1,Vertex2);
+            var r2 = new Rect(Vertex1,Vertex3);
+            var r3 = new Rect(Vertex2,Vertex3);
+            return r1.GetLength() + r2.GetLength() + r3.GetLength();
+        }
         /// <summary>
         /// Belongses to triangle.
         /// </summary>

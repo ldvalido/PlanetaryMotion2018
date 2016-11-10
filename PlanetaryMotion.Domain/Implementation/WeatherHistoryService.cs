@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using PlanetaryMotion.Domain.Contract;
+using PlanetaryMotion.Model.Dto;
 using PlanetaryMotion.Model.Model;
-using PlanetaryMotion.Model.Poco;
 using PlanetaryMotion.Storage.Implementation;
 
 namespace PlanetaryMotion.Domain.Implementation
@@ -19,15 +19,15 @@ namespace PlanetaryMotion.Domain.Implementation
         /// </summary>
         /// <returns></returns>
         /// <exception cref="System.NotImplementedException"></exception>
-        public StatsPoco GetStats()
+        public StatsDto GetStats()
         {
             var grouping = WeatherHistoryStorage.
                 GetAll().
                 GroupBy(wh => wh.Weather);
-            var returnValue = new StatsPoco
+            var returnValue = new StatsDto
             {
                 DroughtPeriods = grouping.FirstOrDefault(p => p.Key == WeatherCondition.Drought)?.Count(),
-                STPPeriods = grouping.FirstOrDefault(p => p.Key == WeatherCondition.STP)?.Count(),
+                StpPeriods = grouping.FirstOrDefault(p => p.Key == WeatherCondition.STP)?.Count(),
                 RainyPeriods= grouping.FirstOrDefault(p => p.Key == WeatherCondition.Rainy)?.Count(),
                 UnknownPeriods = grouping.FirstOrDefault(p => p.Key == WeatherCondition.Unknown)?.Count(),
             };

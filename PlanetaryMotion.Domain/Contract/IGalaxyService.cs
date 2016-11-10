@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using PlanetaryMotion.Model;
 using PlanetaryMotion.Model.Model;
+using PlanetaryMotion.Model.Poco;
 
 namespace PlanetaryMotion.Domain.Contract
 {
@@ -16,7 +17,7 @@ namespace PlanetaryMotion.Domain.Contract
         /// <param name="planets">The planets.</param>
         /// <param name="day">The day.</param>
         /// <returns></returns>
-        WeatherCondition PredictWeather(IEnumerable<Planet> planets, int day);
+        WeatherPredictionResult PredictWeather(IEnumerable<Planet> planets, int day);
 
         /// <summary>
         /// Gets or sets the default galaxy identifier.

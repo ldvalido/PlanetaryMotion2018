@@ -32,7 +32,7 @@ namespace PlanetaryMotion.Web.Controllers
         {
             var planets = PlanetStorage.GetByCriteria(p => p.Galaxy.Id == _galaxyService.DefaultGalaxyId());
             var weatherCondition = _galaxyService.PredictWeather(planets, day);
-            return new WeatherHistory { Day = day, Weather = weatherCondition };
+            return new WeatherHistory { Day = day, Weather = weatherCondition.WeatherCondition,TrianglePerimeter = weatherCondition.TrianglePerimeter};
         }
         /// <summary>
         /// Initializes a new instance of the <see cref="WeatherController"/> class.
