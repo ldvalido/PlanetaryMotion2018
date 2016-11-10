@@ -30,6 +30,7 @@ namespace PlanetaryMotion.Processes.Batch
             Console.WriteLine($"Periodos Lluviosos: {result.RainyPeriods}");
             Console.WriteLine($"Periodos con condiciones normales de presión y temperatura: {result.StpPeriods}");
             Console.WriteLine($"Otros Periodos: {result.UnknownPeriods}");
+            Console.WriteLine($"Perimetro Máximo del triangulo: {result.MaxTrianglePerimter}");
         }
 
         /// <summary>

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
-using PlanetaryMotion.Model;
 using PlanetaryMotion.Model.Model;
 
 namespace PlanetaryMotion.Storage.Context
@@ -9,7 +8,7 @@ namespace PlanetaryMotion.Storage.Context
     /// 
     /// </summary>
     /// <seealso cref="System.Data.Entity.DropCreateDatabaseIfModelChanges{PlanetaryMotion.Storage.Context.PlanetaryMotionContext}" />
-    public class PlanetaryMotionInitializer : DropCreateDatabaseAlways<PlanetaryMotionContext>
+    public class PlanetaryMotionInitializer : CreateDatabaseIfNotExists<PlanetaryMotionContext>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="PlanetaryMotionInitializer"/> class.
