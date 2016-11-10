@@ -38,9 +38,7 @@ namespace PlanetaryMotion.IOC
         {
             LoadAssemblies();
 
-            var loadedAsm = AppDomain.CurrentDomain.GetAssemblies().
-                Where(asm => asm.FullName.ToLowerInvariant().Contains("planetarymotion")).
-                ToArray();
+            var loadedAsm = AppDomain.CurrentDomain.GetAssemblies().Where(FilterDomainAssembly).ToArray();
 
             Builder = new ContainerBuilder();
             Builder.RegisterAssemblyTypes(loadedAsm)
@@ -82,13 +80,22 @@ namespace PlanetaryMotion.IOC
         /// <param name="assembly">The assembly.</param>
         void LoadReferencedAssembly(Assembly assembly)
         {
-            foreach (var name in assembly.GetReferencedAssemblies())
+            foreach (var name in assembly.GetReferencedAssemblies().Where(FilterDomainAssembly))
             {
                 if (AppDomain.CurrentDomain.GetAssemblies().All(a => a.FullName != name.FullName))
                 {
                     LoadReferencedAssembly(Assembly.Load(name));
                 }
             }
+        }
+
+        bool FilterDomainAssembly(AssemblyName asm)
+        {
+            return asm.FullName.ToLowerInvariant().Contains("planetarymotion");
+        }
+        bool FilterDomainAssembly(Assembly asm)
+        {
+            return asm.FullName.ToLowerInvariant().Contains("planetarymotion");
         }
         #endregion
 

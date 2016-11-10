@@ -4,3 +4,4 @@
 /.vs/
 /PlanetaryMotion.Deploy/
 /.sonarqube/
+*.sln.DotSettings.user

@@ -14,6 +14,6 @@
     <StartArguments>-b InitialLoading</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>-b Stats</StartArguments>
+    <StartArguments>-b InitialLoading</StartArguments>
   </PropertyGroup>
 </Project>

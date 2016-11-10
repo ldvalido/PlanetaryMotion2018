@@ -8,6 +8,6 @@
         /// <summary>
         /// The criteria round
         /// </summary>
-        public const int CriteriaRound = 10;
+        public const int CriteriaRound = 5;
     }
 }
