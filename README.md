@@ -4,6 +4,7 @@ A nivel de infraestructura la solución esta pensada para ser usada en dos servi
 En lo que respecta a la base de datos, inicialmente la solución fue diseñada para funcionar con motores MySQL aunque podría funcionar con cualquier tipo de base de datos debido a la existencia de un ORM (Entity Framework 6) utilizada para los diversos accesos a datos.El servicor de MySQL actualmente es un Linux Debian con MySql 5.5 provisto por Google Cloud Platform (GCP).
 # Arquitectura
 La arquitectura usada es una arquitectura orientada a servicios (http://microservices.io/) y se encuentra desarrollada con .NET framework 4.6. Asimismo se esta utilizado un Service Locator (AutoFac: https://autofac.org/) a fin de proveer la resolución de dependencias necesarias a fin de reducir el acoplamiento entre las diferentes clases. La exposición de los diferentes recursos HTTP se realizan a través del framework WebApi2.
+Se utilizo Entity Framework (Ver frameworks) como ORM para acceso a la base de datos, siendo usada la estrategia Code First para el diseño de la misma.
 # Artefactos
 La aplicación cuenta básicamente con dos artefactos, el primero es la aplicación Web, donde a través de una serie de etapas se pasa a responder las diferentes necesidades básicas como así también la interoperatibilidad correspondiente con otras aplicaciones si lo quieren.
 El otro componente, es un proceso batch que permite hacer la carga historica de datos dentro de la base de datos de la aplicación.
@@ -26,3 +27,7 @@ Asimismo la aplicación cuenta con una instancia dedicada de SonarQube en la url
 Esta aplicaición ejecuta las métricas de código correspondientes del código fuente. Cabe mencionar que dicha instancia se encuentra hosteada en GCP. A fin de poder correr el motor de SonarQube se configuro el Running Environment de Java 8 y al mismo se le agrego el plugin correspondiente para C#.
 # Swagger
 Asimismo a través de la url http://104.196.209.111, es posible realizar la navegación de los diferentes recursos API expuestos en la aplicación.
+# Documentación
+Se incluye la siguiente documentación
+* El DER correspondiente a la base de datos es realizo a través de la herramienta MySql WorkBench 6.3.
+* El Help File correspondiente a la solución y a las diversas clases existentes se realizo con una versión trial de la herramienta Document! X.
