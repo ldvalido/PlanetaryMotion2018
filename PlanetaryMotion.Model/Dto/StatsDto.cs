@@ -33,5 +33,12 @@
         /// The unknown periods.
         /// </value>
         public int? UnknownPeriods { get; set; }
+        /// <summary>
+        /// Gets or sets the maximum triangle perimter.
+        /// </summary>
+        /// <value>
+        /// The maximum triangle perimter.
+        /// </value>
+        public double? MaxTrianglePerimter { get; set; }
     }
 }

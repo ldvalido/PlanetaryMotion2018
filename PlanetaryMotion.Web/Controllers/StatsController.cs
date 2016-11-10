@@ -24,7 +24,10 @@ namespace PlanetaryMotion.Web.Controllers
         {
             return _weatherHistoryService.GetStats();
         }
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StatsController"/> class.
+        /// </summary>
+        /// <param name="weatherHistoryService">The weather history service.</param>
         public StatsController(IWeatherHistoryService weatherHistoryService)
         {
             _weatherHistoryService = weatherHistoryService;

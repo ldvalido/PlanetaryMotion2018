@@ -17,7 +17,18 @@ namespace PlanetaryMotion.Geometry.Extension
         /// </returns>
         public static bool IsMultiple(this double aDouble, double anotherDouble)
         {
-            return Math.Round(aDouble%anotherDouble,GeometryConst.CriteriaRound) == 0;
+            return (aDouble%anotherDouble).IsSimilar(0);
+        }
+
+        /// <summary>
+        /// Ares the similar.
+        /// </summary>
+        /// <param name="aDouble">a double.</param>
+        /// <param name="anotherDouble">Another double.</param>
+        /// <returns></returns>
+        public static bool IsSimilar(this double aDouble, double anotherDouble)
+        {
+            return Math.Round(aDouble - anotherDouble, GeometryConst.CriteriaRound) == 0;
         }
     }
 }

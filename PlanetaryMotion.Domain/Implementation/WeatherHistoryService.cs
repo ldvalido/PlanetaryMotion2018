@@ -21,15 +21,15 @@ namespace PlanetaryMotion.Domain.Implementation
         /// <exception cref="System.NotImplementedException"></exception>
         public StatsDto GetStats()
         {
-            var grouping = WeatherHistoryStorage.
-                GetAll().
-                GroupBy(wh => wh.Weather);
+            var lstWeatherHistory = WeatherHistoryStorage.GetAll().ToList();
+            var grouping = lstWeatherHistory.GroupBy(wh => wh.Weather);
             var returnValue = new StatsDto
             {
                 DroughtPeriods = grouping.FirstOrDefault(p => p.Key == WeatherCondition.Drought)?.Count(),
                 StpPeriods = grouping.FirstOrDefault(p => p.Key == WeatherCondition.STP)?.Count(),
                 RainyPeriods= grouping.FirstOrDefault(p => p.Key == WeatherCondition.Rainy)?.Count(),
                 UnknownPeriods = grouping.FirstOrDefault(p => p.Key == WeatherCondition.Unknown)?.Count(),
+                MaxTrianglePerimter = lstWeatherHistory.Max(p=>p.TrianglePerimeter)
             };
             return returnValue;
         }

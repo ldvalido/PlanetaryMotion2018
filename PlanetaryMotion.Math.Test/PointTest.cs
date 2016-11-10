@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using PlanetaryMotion.Geometry.Extension;
 using Xunit;
 
 namespace PlanetaryMotion.Geometry.Test
@@ -72,8 +73,8 @@ namespace PlanetaryMotion.Geometry.Test
         {
             var pStart = new Point(1, 0);
             var finalPoint = pStart.MoveAngle(45);
-            Assert.Equal(finalPoint.X, Math.Sqrt(2)/ 2, GeometryConst.CriteriaRound);
-            Assert.Equal(finalPoint.Y, Math.Sqrt(2) / 2, GeometryConst.CriteriaRound);
+            Assert.True(finalPoint.X.IsSimilar(Math.Sqrt(2)/ 2));
+            Assert.True(finalPoint.Y.IsSimilar(Math.Sqrt(2) / 2));
         }
     }
 }

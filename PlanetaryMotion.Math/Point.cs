@@ -73,7 +73,9 @@ namespace PlanetaryMotion.Geometry
         /// <returns></returns>
         public bool AreAligned(params Point[] point)
         {
-            return AreAligned(point.ToList());
+            var lst = point.ToList();
+            lst.Add(this);
+            return AreAligned(lst);
         }
         /// <summary>
         /// Ares the aligned.
@@ -82,14 +84,11 @@ namespace PlanetaryMotion.Geometry
         /// <returns></returns>
         public bool AreAligned(IEnumerable<Point> points)
         {
-            var polar = GetPolarCoordinates();
-            var res = points.FirstOrDefault(point =>
+            var rect = new Rect(this, points.First());
+            return points.All(p =>
             {
-                var pointPolar = point.GetPolarCoordinates();
-                var angle = polar.Phase - pointPolar.Phase;
-                return angle.IsMultiple(Pi2);
+                return rect.Belongs(p);
             });
-            return res == null;
         }
         /// <summary>
         /// Moves the angle.

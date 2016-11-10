@@ -1,6 +1,7 @@
 ﻿using System;
 using PlanetaryMotion.Domain.Implementation;
 using PlanetaryMotion.Geometry;
+using PlanetaryMotion.Geometry.Extension;
 using Xunit;
 
 namespace PlanetaryMotion.Domain.Test
@@ -16,8 +17,8 @@ namespace PlanetaryMotion.Domain.Test
             var startPoint = new Point(x:0, y:1);
             var circular = new CircularMovementService();
             var finalPoint = circular.Calculate(startPoint,angle: 1,days: 90);
-            Assert.Equal(finalPoint.X,-1d,GeometryConst.CriteriaRound);
-            Assert.Equal(finalPoint.Y,0d,GeometryConst.CriteriaRound);
+            Assert.True(finalPoint.X.IsSimilar(-1d));
+            Assert.True(finalPoint.Y.IsSimilar(0d));
         }
         /// <summary>
         /// Tests the basic movement.
@@ -28,8 +29,8 @@ namespace PlanetaryMotion.Domain.Test
             var startPoint = new Point(x: 0, y: 1);
             var circular = new CircularMovementService();
             var finalPoint = circular.Calculate(startPoint, angle: 1, days: 45);
-            Assert.Equal(finalPoint.X, Math.Sqrt(2) / -2, GeometryConst.CriteriaRound);
-            Assert.Equal(finalPoint.Y, Math.Sqrt(2) / 2, GeometryConst.CriteriaRound);
+            Assert.True(finalPoint.X.IsSimilar(Math.Sqrt(2) / -2));
+            Assert.True(finalPoint.Y.IsSimilar(Math.Sqrt(2) / 2));
         }
     }
 }

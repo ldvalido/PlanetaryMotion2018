@@ -1,4 +1,6 @@
 ﻿using System;
+using PlanetaryMotion.Geometry.Extension;
+using PlanetaryMotion.Geometry.RectBelong;
 
 namespace PlanetaryMotion.Geometry
 {
@@ -8,10 +10,10 @@ namespace PlanetaryMotion.Geometry
     public class Rect
     {
         #region Private Properties
-        private readonly double _a;
-        private readonly double _b;
         private readonly Point _vertex1;
         private readonly Point _vertex2;
+        private readonly IBelongRect _belongChecker;
+
         #endregion
         #region C...tor        
         /// <summary>
@@ -24,9 +26,17 @@ namespace PlanetaryMotion.Geometry
             _vertex1 = vertex1;
             _vertex2 = vertex2;
             //(y-y1) / (y2-y1) = (x-x1) / (x2-x1)
-            var factor = (vertex2.Y - vertex1.Y)/(vertex2.X - vertex1.X);
-            _b = factor*vertex1.X - vertex1.Y;
-            _a = factor;
+            var divisor = vertex2.X - vertex1.X;
+            if (!divisor.IsSimilar(0))
+            {
+                var b = (vertex1.Y*vertex2.X - vertex1.X*vertex2.Y)/divisor;
+                var m = (vertex2.Y - vertex1.Y)/(divisor);
+                _belongChecker = new StandardRect(m,b); 
+            }
+            else
+            {
+                _belongChecker = new ParallelRect(vertex1.X);
+            }
         }
         #endregion
         #region Public Method        
@@ -37,7 +47,7 @@ namespace PlanetaryMotion.Geometry
         /// <returns></returns>
         public bool Belongs(Point point)
         {
-            return Math.Round(point.Y,GeometryConst.CriteriaRound) == Math.Round(point.X*_a + _b,GeometryConst.CriteriaRound);
+            return _belongChecker.Belongs(point);
         }
         /// <summary>
         /// Gets the length.
