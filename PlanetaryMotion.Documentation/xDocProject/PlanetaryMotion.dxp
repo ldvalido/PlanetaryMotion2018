@@ -126,7 +126,7 @@
   <ProjectProfiles>
     <ProjectProfile Id="6b2cfb6d-7340-49af-9cfb-d31ec7a4a0d5" Name="Default">
       <DefaultItemQualifiedName>PlanetaryMotion.Processes</DefaultItemQualifiedName>
-      <StripMetadata>false</StripMetadata>
+      <StripMetadata>true</StripMetadata>
       <AlwaysCopyTemplateFiles>true</AlwaysCopyTemplateFiles>
       <OutputFileExtension>.html</OutputFileExtension>
       <Title m="2016-11-10T17:11:47.4577597Z">PlanetaryMotion</Title>
@@ -135,7 +135,7 @@
       <IsNewDateTime></IsNewDateTime>
       <PublishingTargets />
       <PropertyDefinitionValues />
-      <IsTidyXhtmlEnabled>false</IsTidyXhtmlEnabled>
+      <IsTidyXhtmlEnabled>true</IsTidyXhtmlEnabled>
       <CommunityOptions UseLocalProxyUrl="false" Enabled="false">
         <ServerType>PublicEvaluation</ServerType>
         <LocalProxyUrl></LocalProxyUrl>
@@ -455,7 +455,7 @@
       </WebService>
       <HelpCompiler CompileHelpFile="true" IsWebOutputEnabled="false" IsMarkOfTheWebEnabled="false">
         <MarkOfTheWebDomain>(0014)about:internet</MarkOfTheWebDomain>
-        <HelpFileVersion>Help3</HelpFileVersion>
+        <HelpFileVersion>HtmlHelp1</HelpFileVersion>
         <Help2Namespace>newprojecttest1</Help2Namespace>
         <Help2FileId>Default</Help2FileId>
         <Help2PluginToNamespaces></Help2PluginToNamespaces>
@@ -556,6 +556,20 @@
       <OutputDirectory></OutputDirectory>
     </ProjectProfile>
   </ProjectProfiles>
+  <BuildConfigurations>
+    <BuildConfiguration Id="103294f8-1bdf-49c7-8c84-a64646dbd8ba" Name="BuildConfiguration">
+      <Events>
+        <EventGroup Id="f7f9326d-cc3e-4ead-baed-6444934f652d">
+          <Events />
+        </EventGroup>
+      </Events>
+      <BuildConfigurationItems>
+        <BuildConfigurationItem ProjectProfileId="6b2cfb6d-7340-49af-9cfb-d31ec7a4a0d5" IsIncluded="true">
+          <ProjectLocale CultureId="-" />
+        </BuildConfigurationItem>
+      </BuildConfigurationItems>
+    </BuildConfiguration>
+  </BuildConfigurations>
   <HelpContextIDHeaderFile></HelpContextIDHeaderFile>
   <PrimaryLocale CultureId="-">
     <ExportDateTime></ExportDateTime>

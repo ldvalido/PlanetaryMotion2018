@@ -90,22 +90,7 @@
       <TopicCategory Id="-" AutoIndex="false">
         <Caption m="2009-09-11T10:57:19.7639331Z">(Un-categorized)</Caption>
         <ChildTopicCategories />
-        <Topics>
-          <Topic Id="75f8103a-2eda-4811-9f4a-048eb2d8d7e9" Status="New Topic" CreatedOn="2016-11-10T17:10:46.959645Z" ModifiedOn="2016-11-10T17:11:06.9967597Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="NewTopic" BuildFlags="">
-            <Title />
-            <ContentsTitle m="2016-11-10T17:11:06.9967597Z">PlanetaryMotion</ContentsTitle>
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-11-10T17:10:46.9606451Z">&lt;p&gt; &lt;/p&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-        </Topics>
+        <Topics />
       </TopicCategory>
       <TopicCategory Id="CONTENTSNIPPETS" AutoIndex="false">
         <Caption m="2016-11-09T19:46:37.1536864Z">Content Snippets</Caption>
@@ -144,7 +129,7 @@
       <StripMetadata>false</StripMetadata>
       <AlwaysCopyTemplateFiles>true</AlwaysCopyTemplateFiles>
       <OutputFileExtension>.html</OutputFileExtension>
-      <Title />
+      <Title m="2016-11-10T17:11:47.4577597Z">PlanetaryMotion</Title>
       <ClearOutputDirectoryBeforeBuild>false</ClearOutputDirectoryBeforeBuild>
       <IsNewIndicatorEnabled>false</IsNewIndicatorEnabled>
       <IsNewDateTime></IsNewDateTime>
