@@ -1,4 +1,4 @@
-﻿namespace PlanetaryMotion.Model
+﻿namespace PlanetaryMotion.Model.Model
 {
     /// <summary>
     /// 
