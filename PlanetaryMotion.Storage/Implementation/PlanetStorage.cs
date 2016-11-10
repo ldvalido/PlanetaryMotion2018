@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using PlanetaryMotion.Model;
+using PlanetaryMotion.Model.Model;
 using PlanetaryMotion.Storage.Base;
 
 namespace PlanetaryMotion.Storage.Implementation

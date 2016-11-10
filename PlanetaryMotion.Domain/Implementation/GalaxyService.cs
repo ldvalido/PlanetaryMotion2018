@@ -3,6 +3,7 @@ using System.Linq;
 using PlanetaryMotion.Domain.Contract;
 using PlanetaryMotion.Geometry;
 using PlanetaryMotion.Model;
+using PlanetaryMotion.Model.Model;
 using PlanetaryMotion.Storage.Implementation;
 
 namespace PlanetaryMotion.Domain.Implementation

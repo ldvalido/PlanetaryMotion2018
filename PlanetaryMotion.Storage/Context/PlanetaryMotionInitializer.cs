@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
 using PlanetaryMotion.Model;
+using PlanetaryMotion.Model.Model;
 
 namespace PlanetaryMotion.Storage.Context
 {

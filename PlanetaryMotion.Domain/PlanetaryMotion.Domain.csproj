@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="Contract\IGalaxyService.cs" />
     <Compile Include="Contract\IPlanetMovementService.cs" />
+    <Compile Include="Contract\IWeatherHistoryService.cs" />
     <Compile Include="Implementation\CircularMovementService.cs" />
     <Compile Include="Implementation\GalaxyService.cs" />
+    <Compile Include="Implementation\WeatherHistoryService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

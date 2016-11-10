@@ -1,5 +1,6 @@
 ﻿using PlanetaryMotion.Domain.Contract;
 using PlanetaryMotion.Model;
+using PlanetaryMotion.Model.Model;
 using PlanetaryMotion.Processes.Option;
 using PlanetaryMotion.Storage.Implementation;
 

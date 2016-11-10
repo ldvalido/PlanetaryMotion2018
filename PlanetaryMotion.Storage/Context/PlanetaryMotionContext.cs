@@ -1,7 +1,6 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using PlanetaryMotion.Model;
-
+using PlanetaryMotion.Model.Model;
 namespace PlanetaryMotion.Storage.Context
 {
     /// <summary>
@@ -61,7 +60,7 @@ namespace PlanetaryMotion.Storage.Context
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            modelBuilder.Entity<WeatherHistory>().HasKey(w => w.Day);
+            modelBuilder.Entity<WeatherHistory>().HasKey(p => p.Day);
             base.OnModelCreating(modelBuilder);
         }
         #endregion
