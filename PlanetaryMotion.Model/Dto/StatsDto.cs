@@ -1,9 +1,9 @@
-﻿namespace PlanetaryMotion.Model.Poco
+﻿namespace PlanetaryMotion.Model.Dto
 {
     /// <summary>
     /// 
     /// </summary>
-    public class StatsPoco
+    public class StatsDto
     {
         /// <summary>
         /// Gets or sets the rainy periods.

@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Diagnostics;
-using PlanetaryMotion.Processes.Batch;
+using Autofac;
+using PlanetaryMotion.Processes.Option;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace PlanetaryMotion.Processes.Option
+namespace PlanetaryMotion.Processes.Batch
 {
     /// <summary>
     /// 
@@ -10,21 +14,14 @@ namespace PlanetaryMotion.Processes.Option
     /// <seealso cref="PlanetaryMotion.Processes.Batch.IProcessManager" />
     public class ProcessManager : IProcessManager
     {
-        #region Process Base        
-        /// <summary>
-        /// Gets or sets the process.
-        /// </summary>
-        /// <value>
-        /// The process.
-        /// </value>
-        public IProcessBase Process { get; set; }
-        #endregion
+
         #region Implementation of IProcessManager        
         /// <summary>
         /// Executes the process.
         /// </summary>
         /// <param name="processOption">The process option.</param>
-        public void ExecuteProcess(ProcessOption processOption)
+        /// 
+        public void ExecuteProcess(IContainer container , ProcessOption processOption)
         {
             var stopWatch = new Stopwatch();
             stopWatch.Start();
@@ -33,17 +30,30 @@ namespace PlanetaryMotion.Processes.Option
             {   
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("The process is preparing to execute");
-
-                for (var i = 0; i < processOption.Days; i++)
+                var processes = container.Resolve<IEnumerable<IProcessBase>>();
+                var process = processes.FirstOrDefault(p => string.Compare(p.ExecutionKey(), processOption.Batch,StringComparison.OrdinalIgnoreCase) == 0);
+                if (process != null)
                 {
-                    if (i % processOption.DeliveryResume == 0)
+                    if (process.HasUniqueExecution())
                     {
-                        Console.WriteLine($"Executing process #{i} of {processOption.Days}");
+                        process.Execute(0);
                     }
-                    Process.Execute(processOption.Days);
+                    else
+                    {
+                        for (var i = 0; i < processOption.Days; i++)
+                        {
+                            if (i%processOption.DeliveryResume == 0)
+                            {
+                                Console.WriteLine($"Executing process #{i} of {processOption.Days}");
+                            }
+                            process.Execute(processOption.Days);
+                        }
+                    }
                 }
-                
-                
+                else
+                {
+                    Console.WriteLine("The process does not exists");
+                }
                 Console.WriteLine("The execution was succesfully");
             }
             catch (Exception ex)
