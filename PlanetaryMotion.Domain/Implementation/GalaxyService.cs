@@ -33,6 +33,7 @@ namespace PlanetaryMotion.Domain.Implementation
         /// <returns></returns>
         public WeatherPredictionResult PredictWeather(IEnumerable<Planet> planets, int day)
         {
+            WeatherPredictionResult returnValue;
             var lstPoints = new List<Point>();
             foreach (var planet in planets)
             {
@@ -44,7 +45,7 @@ namespace PlanetaryMotion.Domain.Implementation
             if (lstPoints.First().AreAligned(lstPoints.Skip(1)))
             {
                 var rect = new Rect(lstPoints.First(), lstPoints.Last());
-                return new WeatherPredictionResult
+                returnValue = new WeatherPredictionResult
                 {
                     WeatherCondition = rect.Belongs(new Point(0, 0)) ? WeatherCondition.Drought : WeatherCondition.STP,
                     TrianglePerimeter = null
@@ -53,13 +54,14 @@ namespace PlanetaryMotion.Domain.Implementation
             else
             {
                 var triangle = new Triangle(lstPoints[0],lstPoints[1],lstPoints[2]);
-                return new WeatherPredictionResult
+                returnValue = new WeatherPredictionResult
                 {
                     WeatherCondition =
                         triangle.Belongs(new Point(0, 0)) ? WeatherCondition.Rainy : WeatherCondition.Unknown,
                     TrianglePerimeter = new Triangle(lstPoints[0], lstPoints[1], lstPoints[2]).GetPerimeter()
                 };
             }
+            return returnValue;
         }
 
         /// <summary>

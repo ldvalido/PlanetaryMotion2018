@@ -42,6 +42,10 @@ namespace PlanetaryMotion.Processes.Batch
         /// <param name="idExecution">The option.</param>
         public void Execute(int idExecution)
         {
+            if (idExecution == 100)
+            {
+                var a = "";
+            }
             var planets = PlanetStorage.GetByCriteria(p => p.Galaxy.Id == GalaxyService.DefaultGalaxyId());
             var predictionResult = GalaxyService.PredictWeather(planets, day: idExecution);
             var weatherHistory = new WeatherHistory { Day = idExecution, Weather = predictionResult.WeatherCondition,TrianglePerimeter = predictionResult.TrianglePerimeter};

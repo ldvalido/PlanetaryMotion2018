@@ -46,7 +46,7 @@ namespace PlanetaryMotion.Processes.Batch
                             {
                                 Console.WriteLine($"Executing process #{i} of {processOption.Days}");
                             }
-                            process.Execute(processOption.Days);
+                            process.Execute(i);
                         }
                     }
                 }
