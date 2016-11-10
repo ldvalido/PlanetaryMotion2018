@@ -17,7 +17,6 @@
     <ContentFile FileName="PlanetaryMotion.IOC.dxc" Moniker="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.IOC.dll" DocType="DX.NET" />
     <ContentFile FileName="PlanetaryMotion.Model.dxc" Moniker="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Model.dll" DocType="DX.NET" />
     <ContentFile FileName="PlanetaryMotion.Storage.dxc" Moniker="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Storage.dll" DocType="DX.NET" />
-    <ContentFile FileName="PlanetaryMotion.Web.dxc" Moniker="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Web.dll" DocType="DX.NET" />
     <ContentFile FileName="PlanetaryMotion.Processes.dxc" Moniker="..\..\PlanetaryMotion.Processes\bin\Debug\PlanetaryMotion.Processes.exe" DocType="DX.NET" />
   </ContentFiles>
   <AutoDocFiles />
@@ -38,7 +37,6 @@
     <Assembly FileName="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.IOC.dll" RootTypeName="" />
     <Assembly FileName="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Model.dll" RootTypeName="" />
     <Assembly FileName="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Storage.dll" RootTypeName="" />
-    <Assembly FileName="..\..\PlanetaryMotion.Web\bin\PlanetaryMotion.Web.dll" RootTypeName="" />
     <Assembly FileName="..\..\PlanetaryMotion.Processes\bin\Debug\PlanetaryMotion.Processes.exe" RootTypeName="" />
   </DotNetAssemblies>
   <DatabaseProjectPlugin>
@@ -92,7 +90,22 @@
       <TopicCategory Id="-" AutoIndex="false">
         <Caption m="2009-09-11T10:57:19.7639331Z">(Un-categorized)</Caption>
         <ChildTopicCategories />
-        <Topics />
+        <Topics>
+          <Topic Id="75f8103a-2eda-4811-9f4a-048eb2d8d7e9" Status="New Topic" CreatedOn="2016-11-10T17:10:46.959645Z" ModifiedOn="2016-11-10T17:11:06.9967597Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="NewTopic" BuildFlags="">
+            <Title />
+            <ContentsTitle m="2016-11-10T17:11:06.9967597Z">PlanetaryMotion</ContentsTitle>
+            <Notes></Notes>
+            <TopicSections>
+              <TopicSection Name="BodyText">
+                <Content m="2016-11-10T17:10:46.9606451Z">&lt;p&gt; &lt;/p&gt;</Content>
+              </TopicSection>
+            </TopicSections>
+            <TopicLinks />
+            <TopicKeywords />
+            <PropertyDefinitionValues />
+            <ExcludedOtherFiles />
+          </Topic>
+        </Topics>
       </TopicCategory>
       <TopicCategory Id="CONTENTSNIPPETS" AutoIndex="false">
         <Caption m="2016-11-09T19:46:37.1536864Z">Content Snippets</Caption>
@@ -107,6 +120,11 @@
     <AutoNameEnabled>false</AutoNameEnabled>
     <AutoNamePrefix></AutoNamePrefix>
     <IncludeTopicNameInTitle>false</IncludeTopicNameInTitle>
+    <TopicEditorState>
+      <Attributes>
+        <Attribute key="scrollPosition" valuetype="integer">0</Attribute>
+      </Attributes>
+    </TopicEditorState>
   </TopicsProjectPlugin>
   <WidgetsProjectPlugin>
     <WidgetTypes Version="2011.1" />
@@ -122,7 +140,7 @@
   <Publishing />
   <ProjectProfiles>
     <ProjectProfile Id="6b2cfb6d-7340-49af-9cfb-d31ec7a4a0d5" Name="Default">
-      <DefaultItemQualifiedName></DefaultItemQualifiedName>
+      <DefaultItemQualifiedName>PlanetaryMotion.Processes</DefaultItemQualifiedName>
       <StripMetadata>false</StripMetadata>
       <AlwaysCopyTemplateFiles>true</AlwaysCopyTemplateFiles>
       <OutputFileExtension>.html</OutputFileExtension>
@@ -450,9 +468,9 @@
         <SourceContentUsage>Merge</SourceContentUsage>
         <UseSourceContent>true</UseSourceContent>
       </WebService>
-      <HelpCompiler CompileHelpFile="true" IsWebOutputEnabled="true" IsMarkOfTheWebEnabled="false">
+      <HelpCompiler CompileHelpFile="true" IsWebOutputEnabled="false" IsMarkOfTheWebEnabled="false">
         <MarkOfTheWebDomain>(0014)about:internet</MarkOfTheWebDomain>
-        <HelpFileVersion>HtmlHelp1</HelpFileVersion>
+        <HelpFileVersion>Help3</HelpFileVersion>
         <Help2Namespace>newprojecttest1</Help2Namespace>
         <Help2FileId>Default</Help2FileId>
         <Help2PluginToNamespaces></Help2PluginToNamespaces>
@@ -460,14 +478,14 @@
         <RuntimeMerge></RuntimeMerge>
         <IncludeTextPopupFile>false</IncludeTextPopupFile>
         <Help3BuildIdentifier></Help3BuildIdentifier>
-        <Help3VendorName></Help3VendorName>
+        <Help3VendorName>Leandro Valido</Help3VendorName>
         <Help3CatalogName>VS</Help3CatalogName>
         <Help3CatalogVersion>100</Help3CatalogVersion>
         <Help3CatalogLocaleText>en-US</Help3CatalogLocaleText>
         <Help3TemplateName></Help3TemplateName>
-        <Help3ProductName></Help3ProductName>
-        <Help3BookName></Help3BookName>
-        <IsHelp3CreateRegistrationScriptEnabled>true</IsHelp3CreateRegistrationScriptEnabled>
+        <Help3ProductName>PlanetaryMotion</Help3ProductName>
+        <Help3BookName>PlanetaryMotion - Reference Help File</Help3BookName>
+        <IsHelp3CreateRegistrationScriptEnabled>false</IsHelp3CreateRegistrationScriptEnabled>
         <IsHelp3RegisterLocallyEnabled>true</IsHelp3RegisterLocallyEnabled>
         <IsHelp3SigningEnabled>false</IsHelp3SigningEnabled>
         <IsHelp3ValidationEnabled>false</IsHelp3ValidationEnabled>

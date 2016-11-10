@@ -90,6 +90,32 @@
 </UL>
 </UL>
 </UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="IWeatherHistoryService">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IWeatherHistoryService.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IWeatherHistoryService.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IWeatherHistoryService_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IWeatherHistoryService_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetStats Method">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IWeatherHistoryService~GetStats.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
 </UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
@@ -181,6 +207,50 @@
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="PlanetMovementService Property">
         <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.GalaxyService~PlanetMovementService.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="WeatherHistoryService">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="WeatherHistoryService Constructor">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetStats Method">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService~GetStats.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="WeatherHistoryStorage Property">
+        <param name="Local" value="PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService~WeatherHistoryStorage.html">
      </OBJECT>
 <UL>
 </UL>
@@ -332,6 +402,12 @@
      </OBJECT>
 <UL>
 </UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetLength Method">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Rect~GetLength.html">
+     </OBJECT>
+<UL>
+</UL>
 </UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
@@ -361,6 +437,12 @@
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Belongs Method">
         <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Triangle~Belongs.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetPerimeter Method">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Triangle~GetPerimeter.html">
      </OBJECT>
 <UL>
 </UL>
@@ -425,6 +507,121 @@
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="IsMultiple Method">
         <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Extension.DoubleExtension~IsMultiple.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="IsSimilar Method">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Extension.DoubleExtension~IsSimilar.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="PlanetaryMotion.Geometry.RectBelong Namespace">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong_namespace.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Classes">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ParallelRect">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.ParallelRect.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.ParallelRect.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.ParallelRect_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ParallelRect Constructor">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.ParallelRect~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.ParallelRect_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Belongs Method">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.ParallelRect~Belongs.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="StandardRect">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.StandardRect.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.StandardRect.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.StandardRect_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="StandardRect Constructor">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.StandardRect~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.StandardRect_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Belongs Method">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.StandardRect~Belongs.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Interfaces">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="IBelongRect">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.IBelongRect.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.IBelongRect.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.IBelongRect_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.IBelongRect_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Belongs Method">
+        <param name="Local" value="PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.IBelongRect~Belongs.html">
      </OBJECT>
 <UL>
 </UL>
@@ -573,12 +770,82 @@
      </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
-        <param name="Name" value="PlanetaryMotion.Model Namespace">
+        <param name="Name" value="PlanetaryMotion.Model.Dto Namespace">
      </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Overview">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model_namespace.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Dto_namespace.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Classes">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="StatsDto">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="StatsDto Constructor">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="DroughtPeriods Property">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~DroughtPeriods.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="MaxTrianglePerimter Property">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~MaxTrianglePerimter.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="RainyPeriods Property">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~RainyPeriods.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="StpPeriods Property">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~StpPeriods.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="UnknownPeriods Property">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~UnknownPeriods.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="PlanetaryMotion.Model.Model Namespace">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model_namespace.html">
      </OBJECT>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Classes">
@@ -586,43 +853,43 @@
 <UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Galaxy">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy.html">
      </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Overview">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy.html">
      </OBJECT>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Members">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy_members.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy_members.html">
      </OBJECT>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Galaxy Constructor">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy~_ctor.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy~_ctor.html">
      </OBJECT>
 <UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Properties">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy_properties.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy_properties.html">
      </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Id Property">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy~Id.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy~Id.html">
      </OBJECT>
 <UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Name Property">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy~Name.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy~Name.html">
      </OBJECT>
 <UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Planets Property">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy~Planets.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy~Planets.html">
      </OBJECT>
 <UL>
 </UL>
@@ -630,55 +897,55 @@
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Planet">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Planet.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet.html">
      </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Overview">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Planet.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet.html">
      </OBJECT>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Members">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Planet_members.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet_members.html">
      </OBJECT>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Planet Constructor">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~_ctor.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~_ctor.html">
      </OBJECT>
 <UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Properties">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Planet_properties.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet_properties.html">
      </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Angle Property">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~Angle.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~Angle.html">
      </OBJECT>
 <UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Galaxy Property">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~Galaxy.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~Galaxy.html">
      </OBJECT>
 <UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Id Property">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~Id.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~Id.html">
      </OBJECT>
 <UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Name Property">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~Name.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~Name.html">
      </OBJECT>
 <UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Radious Property">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~Radious.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~Radious.html">
      </OBJECT>
 <UL>
 </UL>
@@ -686,37 +953,43 @@
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="WeatherHistory">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory.html">
      </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Overview">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory.html">
      </OBJECT>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Members">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory_members.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory_members.html">
      </OBJECT>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="WeatherHistory Constructor">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory~_ctor.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory~_ctor.html">
      </OBJECT>
 <UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Properties">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory_properties.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory_properties.html">
      </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Day Property">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory~Day.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory~Day.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="TrianglePerimeter Property">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory~TrianglePerimeter.html">
      </OBJECT>
 <UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Weather Property">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory~Weather.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory~Weather.html">
      </OBJECT>
 <UL>
 </UL>
@@ -729,8 +1002,60 @@
 <UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="WeatherCondition">
-        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherCondition.html">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherCondition.html">
      </OBJECT>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="PlanetaryMotion.Model.Poco Namespace">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Poco_namespace.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Classes">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="WeatherPredictionResult">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="WeatherPredictionResult Constructor">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="TrianglePerimeter Property">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult~TrianglePerimeter.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="WeatherCondition Property">
+        <param name="Local" value="PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult~WeatherCondition.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
 </UL>
 </UL>
 </UL>
@@ -789,6 +1114,18 @@
      </OBJECT>
 <UL>
 </UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ExecutionKey Method">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess~ExecutionKey.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="HasUniqueExecution Method">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess~HasUniqueExecution.html">
+     </OBJECT>
+<UL>
+</UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Properties">
@@ -810,6 +1147,94 @@
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="WeatherHistoryStorage Property">
         <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess~WeatherHistoryStorage.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ProcessManager">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.ProcessManager.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.ProcessManager.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.ProcessManager_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ProcessManager Constructor">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.ProcessManager~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.ProcessManager_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ExecuteProcess Method">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.ProcessManager~ExecuteProcess.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="StatsProcess">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="StatsProcess Constructor">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Execute Method">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess~Execute.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ExecutionKey Method">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess~ExecutionKey.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="HasUniqueExecution Method">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess~HasUniqueExecution.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="WeatherHistoryService Property">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess~WeatherHistoryService.html">
      </OBJECT>
 <UL>
 </UL>
@@ -844,6 +1269,18 @@
      </OBJECT>
 <UL>
 </UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ExecutionKey Method">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.IProcessBase~ExecutionKey.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="HasUniqueExecution Method">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.IProcessBase~HasUniqueExecution.html">
+     </OBJECT>
+<UL>
+</UL>
 </UL>
 </UL>
 </UL>
@@ -860,50 +1297,6 @@
         <param name="Name" value="Classes">
      </OBJECT>
 <UL>
-<LI> <OBJECT type="text/sitemap">
-        <param name="Name" value="ProcessManager">
-        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager.html">
-     </OBJECT>
-<UL>
-<LI> <OBJECT type="text/sitemap">
-        <param name="Name" value="Overview">
-        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager.html">
-     </OBJECT>
-<LI> <OBJECT type="text/sitemap">
-        <param name="Name" value="Members">
-        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager_members.html">
-     </OBJECT>
-<LI> <OBJECT type="text/sitemap">
-        <param name="Name" value="ProcessManager Constructor">
-        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager~_ctor.html">
-     </OBJECT>
-<UL>
-</UL>
-<LI> <OBJECT type="text/sitemap">
-        <param name="Name" value="Methods">
-        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager_methods.html">
-     </OBJECT>
-<UL>
-<LI> <OBJECT type="text/sitemap">
-        <param name="Name" value="ExecuteProcess Method">
-        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager~ExecuteProcess.html">
-     </OBJECT>
-<UL>
-</UL>
-</UL>
-<LI> <OBJECT type="text/sitemap">
-        <param name="Name" value="Properties">
-        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager_properties.html">
-     </OBJECT>
-<UL>
-<LI> <OBJECT type="text/sitemap">
-        <param name="Name" value="Process Property">
-        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager~Process.html">
-     </OBJECT>
-<UL>
-</UL>
-</UL>
-</UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="ProcessOption">
         <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption.html">
@@ -940,6 +1333,12 @@
         <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption_properties.html">
      </OBJECT>
 <UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Batch Property">
+        <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption~Batch.html">
+     </OBJECT>
+<UL>
+</UL>
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Days Property">
         <param name="Local" value="PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption~Days.html">
@@ -1027,6 +1426,18 @@
 <LI> <OBJECT type="text/sitemap">
         <param name="Name" value="Save Method">
         <param name="Local" value="PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1~Save.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="DbContext Property">
+        <param name="Local" value="PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1~DbContext.html">
      </OBJECT>
 <UL>
 </UL>

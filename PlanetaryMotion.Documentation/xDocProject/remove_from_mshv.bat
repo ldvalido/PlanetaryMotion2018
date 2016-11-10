@@ -1,0 +1,1 @@
+ "%ProgramFiles%\Microsoft Help Viewer\v1.0\helplibmanager" /silent /product "VS" /version 100 /locale en-US /uninstall /vendor "Leandro Valido" /productName "PlanetaryMotion" /mediaBookList "PlanetaryMotion - Reference Help File"

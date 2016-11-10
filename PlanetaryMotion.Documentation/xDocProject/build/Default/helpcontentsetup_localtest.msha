@@ -1,0 +1,20 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>PlanetaryMotion</title>
+  </head>
+  <body class="vendor-book">
+    <div class="details">
+      <span class="vendor">Innovasys Local Test</span>
+      <span class="locale">en-US</span>
+      <span class="product">Innovasys Local Test</span>
+      <span class="name">53897de6-763a-474d-a88e-bebdf7263d2b</span>
+    </div>
+    <div class="package-list">
+      <div class="package">
+        <span class="name">53897de6-763a-474d-a88e-bebdf7263d2b</span>      
+        <span class="package-etag"></span>
+        <a class="current-link" href="53897de6-763a-474d-a88e-bebdf7263d2b.cab">53897de6-763a-474d-a88e-bebdf7263d2b.cab</a>
+      </div>
+    </div>
+  </body>
+</html>

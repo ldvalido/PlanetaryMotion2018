@@ -1,4 +1,4 @@
-﻿-- Compile started at Wednesday, 09 November 2016 16:52:48
+﻿-- Compile started at Thursday, 10 November 2016 14:13:48
 Microsoft HTML Help Compiler 4.74.8702
 
 Compiling c:\projects\PlanetaryMotion\PlanetaryMotion.Documentation\xDocProject\Default.chm
@@ -114,33 +114,6 @@ template\packages\plugins-dotnet\script\chm.mshc\jquery-plugins.min.js
 template\packages\plugins-dotnet\script\chm.mshc\debug\jquery-plugins.js
 template\packages\plugins-dotnet\script\default\jquery-plugins.min.js
 template\packages\plugins-dotnet\script\default\debug\jquery-plugins.js
-template\packages\core-web\css\bootstrap.css
-template\packages\core-web\css\index.css
-template\packages\core-web\css\index.responsive.css
-template\packages\core-web\css\nav.css
-template\packages\core-web\css\nav.responsive.css
-template\packages\core-web\css\search.css
-template\packages\core-web\css\search.responsive.css
-template\packages\core-web\css\toc.css
-template\packages\core-web\css\top.css
-template\packages\core-web\css\top.responsive.css
-template\packages\core-web\images\glyphicons-halflings.png
-template\packages\core-web\images\header-index.png
-template\packages\core-web\images\header-search.png
-template\packages\core-web\images\header-toc.png
-template\packages\core-web\images\icons.png
-template\packages\core-web\script\navigation.min.js
-template\packages\core-web\script\debug\navigation.js
-template\packages\jquery-mobile\css\jquery.mobile-1.4.5.min.css
-template\packages\jquery-mobile\css\debug\jquery.mobile-1.4.5.css
-template\packages\jquery-mobile\css\images\ajax-loader.gif
-template\packages\jquery-mobile\css\images\icons-png\arrow-l-white.png
-template\packages\jquery-mobile\css\images\icons-png\carat-r-white.png
-template\packages\jquery-mobile\script\jquery.mobile-1.4.5.min.js
-template\packages\jquery-mobile\script\debug\jquery.mobile-1.4.5.js
-template\packages\plugins-web\css\jquery.layout.css
-template\packages\plugins-web\script\default\jquery-plugins.min.js
-template\packages\plugins-web\script\default\debug\jquery-plugins.js
 PlanetaryMotion.Domain.html
 PlanetaryMotion.Geometry.html
 PlanetaryMotion.IOC.html
@@ -157,9 +130,13 @@ PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IGalaxyService_methods.ht
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IPlanetMovementService.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IPlanetMovementService_members.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IPlanetMovementService_methods.html
+PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IWeatherHistoryService.html
+PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IWeatherHistoryService_members.html
+PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IWeatherHistoryService_methods.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IGalaxyService~DefaultGalaxyId.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IGalaxyService~PredictWeather.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IPlanetMovementService~Calculate.html
+PlanetaryMotion.Domain~PlanetaryMotion.Domain.Contract.IWeatherHistoryService~GetStats.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.CircularMovementService.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.CircularMovementService_members.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.CircularMovementService_methods.html
@@ -168,16 +145,26 @@ PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.GalaxyService.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.GalaxyService_members.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.GalaxyService_properties.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.GalaxyService_methods.html
+dotnetdiagramimages\PlanetaryMotion_Domain_PlanetaryMotion_Domain_Implementation_WeatherHistoryService.png
+PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService.html
+PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService_members.html
+PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService_properties.html
+PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService_methods.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.CircularMovementService~_ctor.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.CircularMovementService~Calculate.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.GalaxyService~_ctor.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.GalaxyService~DefaultGalaxyId.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.GalaxyService~PredictWeather.html
 PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.GalaxyService~PlanetMovementService.html
+PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService~_ctor.html
+PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService~GetStats.html
+PlanetaryMotion.Domain~PlanetaryMotion.Domain.Implementation.WeatherHistoryService~WeatherHistoryStorage.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry_namespace.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry_namespace_hierarchy.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Extension_namespace.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Extension_namespace_hierarchy.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong_namespace.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong_namespace_hierarchy.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.GeometryConst.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.GeometryConst_members.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.GeometryConst_fields.html
@@ -204,8 +191,10 @@ PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Point~X.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Point~Y.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Rect~_ctor.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Rect~Belongs.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Rect~GetLength.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Triangle~_ctor.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Triangle~Belongs.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Triangle~GetPerimeter.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Triangle~Vertex1.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Triangle~Vertex2.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Triangle~Vertex3.html
@@ -213,6 +202,21 @@ PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Extension.DoubleExtension.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Extension.DoubleExtension_members.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Extension.DoubleExtension_methods.html
 PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Extension.DoubleExtension~IsMultiple.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.Extension.DoubleExtension~IsSimilar.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.IBelongRect.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.IBelongRect_members.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.IBelongRect_methods.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.IBelongRect~Belongs.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.ParallelRect.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.ParallelRect_members.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.ParallelRect_methods.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.StandardRect.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.StandardRect_members.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.StandardRect_methods.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.ParallelRect~_ctor.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.ParallelRect~Belongs.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.StandardRect~_ctor.html
+PlanetaryMotion.Geometry~PlanetaryMotion.Geometry.RectBelong.StandardRect~Belongs.html
 PlanetaryMotion.IOC~PlanetaryMotion.IOC_namespace.html
 PlanetaryMotion.IOC~PlanetaryMotion.IOC_namespace_hierarchy.html
 PlanetaryMotion.IOC~PlanetaryMotion.IOC.ServiceLocatorFluent.html
@@ -232,32 +236,52 @@ PlanetaryMotion.IOC~PlanetaryMotion.IOC.ServiceLocatorFluent~Container.html
 PlanetaryMotion.IOC~PlanetaryMotion.IOC.ServiceLocatorFluent~Builder.html
 PlanetaryMotion.IOC~PlanetaryMotion.IOC.ServiceLocatorWebFluent~_ctor.html
 PlanetaryMotion.IOC~PlanetaryMotion.IOC.ServiceLocatorWebFluent~OnCreateContainer.html
-PlanetaryMotion.Model~PlanetaryMotion.Model_namespace.html
-PlanetaryMotion.Model~PlanetaryMotion.Model_namespace_hierarchy.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherCondition.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy_members.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy_properties.html
-dotnetdiagramimages\PlanetaryMotion_Model_PlanetaryMotion_Model_Planet.png
-PlanetaryMotion.Model~PlanetaryMotion.Model.Planet.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Planet_members.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Planet_properties.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory_members.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory_properties.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy~_ctor.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy~Id.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy~Name.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Galaxy~Planets.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~_ctor.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~Angle.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~Galaxy.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~Id.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~Name.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.Planet~Radious.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory~_ctor.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory~Day.html
-PlanetaryMotion.Model~PlanetaryMotion.Model.WeatherHistory~Weather.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Dto_namespace.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Dto_namespace_hierarchy.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model_namespace.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model_namespace_hierarchy.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Poco_namespace.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Poco_namespace_hierarchy.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto_members.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto_properties.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~_ctor.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~DroughtPeriods.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~MaxTrianglePerimter.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~RainyPeriods.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~StpPeriods.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Dto.StatsDto~UnknownPeriods.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherCondition.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy_members.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy_properties.html
+dotnetdiagramimages\PlanetaryMotion_Model_PlanetaryMotion_Model_Model_Planet.png
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet_members.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet_properties.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory_members.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory_properties.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy~_ctor.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy~Id.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy~Name.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Galaxy~Planets.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~_ctor.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~Angle.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~Galaxy.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~Id.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~Name.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.Planet~Radious.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory~_ctor.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory~Day.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory~TrianglePerimeter.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Model.WeatherHistory~Weather.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult_members.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult_properties.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult~_ctor.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult~TrianglePerimeter.html
+PlanetaryMotion.Model~PlanetaryMotion.Model.Poco.WeatherPredictionResult~WeatherCondition.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch_namespace.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch_namespace_hierarchy.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option_namespace.html
@@ -266,30 +290,42 @@ PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.IProcessBase.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.IProcessBase_members.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.IProcessBase_methods.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.IProcessBase~Execute.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.IProcessBase~ExecutionKey.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.IProcessBase~HasUniqueExecution.html
 dotnetdiagramimages\PlanetaryMotion_Processes_PlanetaryMotion_Processes_Batch_LoadHistoryForWeatherProcess.png
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess_members.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess_properties.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess_methods.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.ProcessManager.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.ProcessManager_members.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.ProcessManager_methods.html
+dotnetdiagramimages\PlanetaryMotion_Processes_PlanetaryMotion_Processes_Batch_StatsProcess.png
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess_members.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess_properties.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess_methods.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess~_ctor.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess~Execute.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess~ExecutionKey.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess~HasUniqueExecution.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess~GalaxyService.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess~PlanetStorage.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.LoadHistoryForWeatherProcess~WeatherHistoryStorage.html
-dotnetdiagramimages\PlanetaryMotion_Processes_PlanetaryMotion_Processes_Option_ProcessManager.png
-PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager.html
-PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager_members.html
-PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager_properties.html
-PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager_methods.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.ProcessManager~_ctor.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.ProcessManager~ExecuteProcess.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess~_ctor.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess~Execute.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess~ExecutionKey.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess~HasUniqueExecution.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Batch.StatsProcess~WeatherHistoryService.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption_members.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption_properties.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption_methods.html
-PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager~_ctor.html
-PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager~ExecuteProcess.html
-PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessManager~Process.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption~_ctor.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption~GetUsage.html
+PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption~Batch.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption~Days.html
 PlanetaryMotion.Processes~PlanetaryMotion.Processes.Option.ProcessOption~DeliveryResume.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base_namespace.html
@@ -300,14 +336,17 @@ PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation_namespace.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation_namespace_hierarchy.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.MySqlConfiguration_namespace.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.MySqlConfiguration_namespace_hierarchy.html
+dotnetdiagramimages\PlanetaryMotion_Storage_PlanetaryMotion_Storage_Base_StorageBase`1.png
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1_members.html
+PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1_properties.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1_methods.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1~GetAll.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1~GetByCriteria.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1~GetList.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1~Remove.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1~Save.html
+PlanetaryMotion.Storage~PlanetaryMotion.Storage.Base.StorageBase`1~DbContext.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Context.PlanetaryMotionContext.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Context.PlanetaryMotionContext_members.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Context.PlanetaryMotionContext_properties.html
@@ -322,14 +361,20 @@ PlanetaryMotion.Storage~PlanetaryMotion.Storage.Context.PlanetaryMotionContext~P
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Context.PlanetaryMotionContext~WeatherHistory.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Context.PlanetaryMotionInitializer~_ctor.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Context.PlanetaryMotionInitializer~Seed.html
+dotnetdiagramimages\PlanetaryMotion_Storage_PlanetaryMotion_Storage_Implementation_GalaxyStorage.png
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.GalaxyStorage.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.GalaxyStorage_members.html
+PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.GalaxyStorage_properties.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.GalaxyStorage_methods.html
+dotnetdiagramimages\PlanetaryMotion_Storage_PlanetaryMotion_Storage_Implementation_PlanetStorage.png
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.PlanetStorage.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.PlanetStorage_members.html
+PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.PlanetStorage_properties.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.PlanetStorage_methods.html
+dotnetdiagramimages\PlanetaryMotion_Storage_PlanetaryMotion_Storage_Implementation_WeatherHistoryStorage.png
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.WeatherHistoryStorage.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.WeatherHistoryStorage_members.html
+PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.WeatherHistoryStorage_properties.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.WeatherHistoryStorage_methods.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.GalaxyStorage~_ctor.html
 PlanetaryMotion.Storage~PlanetaryMotion.Storage.Implementation.PlanetStorage~_ctor.html
@@ -347,14 +392,14 @@ PlanetaryMotion.Storage~PlanetaryMotion.Storage.MySqlConfiguration.MySqlHistoryC
 Default.hhc
 Default.hhk
 
-Compile time: 0 minutes, 4 seconds
-200	Topics
-2,218	Local links
+Compile time: 0 minutes, 3 seconds
+267	Topics
+3,438	Local links
 0	Internet links
 0	Graphics
 
 
-Created c:\projects\PlanetaryMotion\PlanetaryMotion.Documentation\xDocProject\Default.chm, 1,465,739 bytes
-Compression decreased file by 6,017,396 bytes.
+Created c:\projects\PlanetaryMotion\PlanetaryMotion.Documentation\xDocProject\Default.chm, 957,896 bytes
+Compression decreased file by 3,796,285 bytes.
 
--- Compile completed on 11/09/2016 16:52:53
+-- Compile completed on 11/10/2016 14:13:51

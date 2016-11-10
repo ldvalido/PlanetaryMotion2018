@@ -105,6 +105,11 @@
     <AutoNameEnabled>false</AutoNameEnabled>
     <AutoNamePrefix></AutoNamePrefix>
     <IncludeTopicNameInTitle>false</IncludeTopicNameInTitle>
+    <TopicEditorState>
+      <Attributes>
+        <Attribute key="scrollPosition" valuetype="integer">0</Attribute>
+      </Attributes>
+    </TopicEditorState>
   </TopicsProjectPlugin>
   <WidgetsProjectPlugin>
     <WidgetTypes Version="2011.1" />
@@ -120,11 +125,11 @@
   <Publishing />
   <ProjectProfiles>
     <ProjectProfile Id="6b2cfb6d-7340-49af-9cfb-d31ec7a4a0d5" Name="Default">
-      <DefaultItemQualifiedName></DefaultItemQualifiedName>
+      <DefaultItemQualifiedName>PlanetaryMotion.Processes</DefaultItemQualifiedName>
       <StripMetadata>false</StripMetadata>
       <AlwaysCopyTemplateFiles>true</AlwaysCopyTemplateFiles>
       <OutputFileExtension>.html</OutputFileExtension>
-      <Title />
+      <Title m="2016-11-10T17:11:47.4577597Z">PlanetaryMotion</Title>
       <ClearOutputDirectoryBeforeBuild>false</ClearOutputDirectoryBeforeBuild>
       <IsNewIndicatorEnabled>false</IsNewIndicatorEnabled>
       <IsNewDateTime></IsNewDateTime>
@@ -448,9 +453,9 @@
         <SourceContentUsage>Merge</SourceContentUsage>
         <UseSourceContent>true</UseSourceContent>
       </WebService>
-      <HelpCompiler CompileHelpFile="true" IsWebOutputEnabled="true" IsMarkOfTheWebEnabled="false">
+      <HelpCompiler CompileHelpFile="true" IsWebOutputEnabled="false" IsMarkOfTheWebEnabled="false">
         <MarkOfTheWebDomain>(0014)about:internet</MarkOfTheWebDomain>
-        <HelpFileVersion>HtmlHelp1</HelpFileVersion>
+        <HelpFileVersion>Help3</HelpFileVersion>
         <Help2Namespace>newprojecttest1</Help2Namespace>
         <Help2FileId>Default</Help2FileId>
         <Help2PluginToNamespaces></Help2PluginToNamespaces>
@@ -458,14 +463,14 @@
         <RuntimeMerge></RuntimeMerge>
         <IncludeTextPopupFile>false</IncludeTextPopupFile>
         <Help3BuildIdentifier></Help3BuildIdentifier>
-        <Help3VendorName></Help3VendorName>
+        <Help3VendorName>Leandro Valido</Help3VendorName>
         <Help3CatalogName>VS</Help3CatalogName>
         <Help3CatalogVersion>100</Help3CatalogVersion>
         <Help3CatalogLocaleText>en-US</Help3CatalogLocaleText>
         <Help3TemplateName></Help3TemplateName>
-        <Help3ProductName></Help3ProductName>
-        <Help3BookName></Help3BookName>
-        <IsHelp3CreateRegistrationScriptEnabled>true</IsHelp3CreateRegistrationScriptEnabled>
+        <Help3ProductName>PlanetaryMotion</Help3ProductName>
+        <Help3BookName>PlanetaryMotion - Reference Help File</Help3BookName>
+        <IsHelp3CreateRegistrationScriptEnabled>false</IsHelp3CreateRegistrationScriptEnabled>
         <IsHelp3RegisterLocallyEnabled>true</IsHelp3RegisterLocallyEnabled>
         <IsHelp3SigningEnabled>false</IsHelp3SigningEnabled>
         <IsHelp3ValidationEnabled>false</IsHelp3ValidationEnabled>
