@@ -1,2 +1,8 @@
 # PlanetaryMotion
-A nice exercise for planetary motion and movements around a pseudo fixed planet
+Infraestructura
+Arquitectura
+Artefactos
+SonarQube
+http://104.196.209.111:9000/
+Swagger
+http://104.196.209.111
