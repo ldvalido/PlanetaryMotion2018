@@ -2,6 +2,7 @@
 # Infraestructura
 A nivel de infraestructura la solución esta pensada para ser usada en dos servidores distintos. En el primer servidor debería estar instalado un Web Server IIS con los correspondientes módulos necesarios para correr aplicaciones ASP.NET.
 En lo que respecta a la base de datos, inicialmente la solución fue diseñada para funcionar con motores MySQL aunque podría funcionar con cualquier tipo de base de datos debido a la existencia de un ORM (Entity Framework 6) utilizada para los diversos accesos a datos.El servicor de MySQL actualmente es un Linux Debian con MySql 5.5 provisto por Google Cloud Platform (GCP).
+Es para destacar que ambos servidores utilizados se recomienda que ambos se encuentren en la misma "Region" del hosting a fin de reducir el costo del tráfico en el ambiente provisto.
 # Arquitectura
 La arquitectura usada es una arquitectura orientada a servicios (http://microservices.io/) y se encuentra desarrollada con .NET framework 4.6. Asimismo se esta utilizado un Service Locator (AutoFac: https://autofac.org/) a fin de proveer la resolución de dependencias necesarias a fin de reducir el acoplamiento entre las diferentes clases. La exposición de los diferentes recursos HTTP se realizan a través del framework WebApi2.
 Se utilizo Entity Framework (Ver frameworks) como ORM para acceso a la base de datos, siendo usada la estrategia Code First para el diseño de la misma.
