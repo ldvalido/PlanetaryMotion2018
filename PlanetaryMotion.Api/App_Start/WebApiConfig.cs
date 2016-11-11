@@ -1,7 +1,7 @@
 ﻿using System.Web.Http;
 using Swashbuckle.Application;
 
-namespace PlanetaryMotion.Web
+namespace PlanetaryMotion.Api
 {
     /// <summary>
     /// 

@@ -2,7 +2,7 @@
 using PlanetaryMotion.Domain.Contract;
 using PlanetaryMotion.Model.Dto;
 
-namespace PlanetaryMotion.Web.Controllers
+namespace PlanetaryMotion.Api.Controllers
 {
     /// <summary>
     /// 

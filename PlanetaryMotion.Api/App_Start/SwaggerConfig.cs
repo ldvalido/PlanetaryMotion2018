@@ -1,11 +1,11 @@
 using System.Web.Http;
-using WebActivatorEx;
-using PlanetaryMotion.Web;
+using PlanetaryMotion.Api;
 using Swashbuckle.Application;
+using WebActivatorEx;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace PlanetaryMotion.Web
+namespace PlanetaryMotion.Api
 {
     /// <summary>
     /// 
