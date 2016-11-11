@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Configuration;
+using System.Web.Mvc;
 
 namespace PlanetaryMotion.Web.Controllers
 {
@@ -7,6 +8,7 @@ namespace PlanetaryMotion.Web.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewBag.ApiPrefix = ConfigurationManager.AppSettings["ApiPrefix"];
             return View();
         }
     }

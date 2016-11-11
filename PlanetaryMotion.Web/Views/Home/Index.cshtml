@@ -84,16 +84,16 @@
                         <div class="col-md">
                             <div class="card">
                                 <div class="header">
-                                    <h4 class="title">Email Statistics</h4>
-                                    <p class="category">Last Campaign Performance</p>
+                                    <h4 class="title">Weather Statistics</h4>
+                                    <p class="category">Periods Performance</p>
                                 </div>
                                 <div class="content">
                                     <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
                                     <div class="footer">
                                         <div class="legend">
-                                            <i class="fa fa-circle text-info"></i> Open
-                                            <i class="fa fa-circle text-danger"></i> Bounce
-                                            <i class="fa fa-circle text-warning"></i> Unsubscribe
+                                            <i class="fa fa-circle text-info"></i> STP
+                                            <i class="fa fa-circle text-danger"></i> Unknown
+                                            <i class="fa fa-circle text-warning"></i> Rainy
                                         </div>
                                         <hr>
                                         <div class="stats">
@@ -125,7 +125,7 @@
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 <script src="../../assets/scripts/stats.js"></script>
 <script type="text/javascript">
-    $(document).ready(function () {stats.init();});
+    $(document).ready(function () { stats.init('@ViewBag.ApiPrefix'); });
 </script>
 </html>
 

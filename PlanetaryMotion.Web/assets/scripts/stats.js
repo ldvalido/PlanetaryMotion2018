@@ -36,10 +36,10 @@ stats = {
         var formattedPerimeter = maxTrianglePerimeter.toFixed(2);
         $('#spanMaxPerimeter').html(formattedPerimeter);
     },
-    initChartist: function() {
+    initChartist: function(apiPrefix) {
         $.ajax(
         {
-            url: 'http://localhost:61247/stats',
+            url: apiPrefix+'/stats',
             crossDomain: true,
             type:'GET'
         }).done(function (data) {
@@ -49,8 +49,8 @@ stats = {
             alert('An error was ocurr');
         });
     },
-    init: function() {
-        stats.initChartist();
+    init: function (apiPrefix) {
+        stats.initChartist(apiPrefix);
 
         $.notify({
             icon: 'pe-7s-gift',
