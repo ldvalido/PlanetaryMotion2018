@@ -128,10 +128,16 @@
     <Content Include="scripts\stats.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\light-bootstrap-dashboard.js" />
+    <Content Include="styles\animate.min.css" />
+    <Content Include="styles\bootstrap.min.css" />
+    <Content Include="styles\demo.css" />
+    <Content Include="styles\light-bootstrap-dashboard.css" />
+    <Content Include="styles\pe-icon-7-stroke.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -143,7 +149,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\Stats.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -153,7 +159,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
@@ -167,7 +172,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>45971</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
