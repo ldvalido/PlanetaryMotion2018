@@ -19,7 +19,7 @@ namespace PlanetaryMotion.Domain.Test
         [Fact]
         public void BasicGroupingTest()
         {
-            var builder = new ServiceLocatorFluent().CreateContainer<object>(null);
+            var builder = new ServiceLocatorFluent().CreateContainer();
 
             var mockWeatherhistoryStorage = new Mock<WeatherHistoryStorage>();
             mockWeatherhistoryStorage.Setup(storage => storage.GetAll()).Returns(

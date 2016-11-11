@@ -33,7 +33,7 @@ namespace PlanetaryMotion.Domain.Test
                 new Planet {Angle = 3, Galaxy = galaxy, Id = 2, Name = "Moq Planet #2", Radious = 2000},
                 new Planet {Angle = -5, Galaxy = galaxy, Id = 3, Name = "Moq Planet #3", Radious = 1000}
             };
-            _container = new ServiceLocatorFluent().CreateContainer<object>(null).Build();
+            _container = new ServiceLocatorFluent().CreateContainer().Build();
 
         }
         #endregion

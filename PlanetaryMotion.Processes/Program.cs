@@ -20,7 +20,7 @@ namespace PlanetaryMotion.Processes
             var options = new ProcessOption();
             if (CommandLine.Parser.Default.ParseArguments(args, options))
             {
-                var container = new ServiceLocatorFluent().CreateContainer<object>(null).Build();
+                var container = new ServiceLocatorFluent().CreateContainer().Build();
 
                 var application = container.Resolve<IProcessManager>();
 

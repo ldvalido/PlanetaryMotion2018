@@ -33,7 +33,26 @@ namespace PlanetaryMotion.IOC
         protected ContainerBuilder Builder;
         #endregion
 
-        #region Virtual Methods        
+        #region Virtual Methods                
+        /// <summary>
+        /// Creates the container.
+        /// </summary>
+        /// <param name="loadedAsm">The loaded asm.</param>
+        /// <returns></returns>
+        public ServiceLocatorFluent CreateContainer()
+        {
+            LoadAssemblies();
+
+            var loadedAsm = GetLoadedAssemblies();
+
+            Builder = new ContainerBuilder();
+            Builder.RegisterAssemblyTypes(loadedAsm)
+                .AsImplementedInterfaces()
+                .AsSelf()
+                .InstancePerDependency().
+                PropertiesAutowired();
+            return this;
+        }
         /// <summary>
         /// Creates the container.
         /// </summary>
@@ -42,17 +61,9 @@ namespace PlanetaryMotion.IOC
         /// <returns></returns>
         public ServiceLocatorFluent CreateContainer<T>(T config)
         {
-            LoadAssemblies();
-
-            var loadedAsm = AppDomain.CurrentDomain.GetAssemblies().Where(FilterDomainAssembly).ToArray();
-
-            Builder = new ContainerBuilder();
-            Builder.RegisterAssemblyTypes(loadedAsm)
-                .AsImplementedInterfaces()
-                .AsSelf()
-                .InstancePerDependency().
-                PropertiesAutowired();
-            OnCreateContainer(Builder,loadedAsm, config);
+            CreateContainer();
+            
+            OnCreateContainer(Builder,GetLoadedAssemblies(), config);
             return this;
         }
         /// <summary>
@@ -97,6 +108,12 @@ namespace PlanetaryMotion.IOC
         #endregion
 
         #region Private Methods        
+        /// <summary>
+        /// Gets the loaded assemblies.
+        /// </summary>
+        /// <returns></returns>
+        Assembly[] GetLoadedAssemblies () => AppDomain.CurrentDomain.GetAssemblies().Where(FilterDomainAssembly).ToArray();
+
         /// <summary>
         /// Loads the assemblies.
         /// </summary>
