@@ -17,6 +17,8 @@ namespace PlanetaryMotion.Api
             // Web API configuration and services
 
             // Web API routes
+            config.EnableCors();
+
             config.MapHttpAttributeRoutes();
 
             config.Formatters.Remove(config.Formatters.XmlFormatter);
@@ -27,8 +29,6 @@ namespace PlanetaryMotion.Api
             defaults: null,
             constraints: null,
             handler: new RedirectHandler((message => message.RequestUri.ToString()), "swagger"));
-
-
         }
     }
 }

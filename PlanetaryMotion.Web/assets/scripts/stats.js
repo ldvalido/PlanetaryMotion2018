@@ -2,19 +2,19 @@ type = ['', 'info', 'success', 'warning', 'danger'];
 
 
 stats = {
-    initChartist: function () {
+    drawChart: function (stpQuantity, unknownQuantity, rainyQuantity, droughtQuantity) {
 
         var dataPreferences = {
             series: [
                 [25, 30, 20, 25]
             ]
         };
-
+        var total = stpQuantity + unknownQuantity + rainyQuantity + droughtQuantity;
         var optionsPreferences = {
             donut: true,
-            donutWidth: 40,
+            donutWidth: 200,
             startAngle: 0,
-            total: 100,
+            total: total,
             showLabel: false,
             axisX: {
                 showGrid: false
@@ -24,8 +24,29 @@ stats = {
         Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartPreferences', {
-            labels: ['STP (50)', 'Unknown (0)', 'Rainy (35)', 'Drought (15)'],
-            series: [50, 0, 35, 15]
+            labels: [
+                'STP (' + stpQuantity + ')',
+                'Unknown (' + unknownQuantity + ')',
+                'Rainy (' + rainyQuantity + ')',
+                'Drought (' + droughtQuantity + ')'],
+            series: [stpQuantity, unknownQuantity, rainyQuantity, droughtQuantity]
+        });
+    },
+    showMaxTrianglePerimeter: function (maxTrianglePerimeter) {
+        var formattedPerimeter = maxTrianglePerimeter.toFixed(2);
+        $('#spanMaxPerimeter').html(formattedPerimeter);
+    },
+    initChartist: function() {
+        $.ajax(
+        {
+            url: 'http://localhost:61247/stats',
+            crossDomain: true,
+            type:'GET'
+        }).done(function (data) {
+            stats.drawChart(data.StpPeriods || 0, data.UnknownPeriods || 0 , data.RainyPeriods || 0, data.DroughtPeriods || 0);
+            stats.showMaxTrianglePerimeter(data.MaxTrianglePerimter);
+        }).fail(function () {
+            alert('An error was ocurr');
         });
     },
     init: function() {
@@ -33,7 +54,7 @@ stats = {
 
         $.notify({
             icon: 'pe-7s-gift',
-            message: "Welcome to <b>Weather Stats Application</b> - a beautiful exercise for process weather events."
+            message: "Welcome to <b>Weather Stats Application</b> - a nice exercise for process weather events."
 
         }, {
             type: 'info',
