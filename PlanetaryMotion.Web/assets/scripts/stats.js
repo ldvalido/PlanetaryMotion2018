@@ -28,21 +28,16 @@ stats = {
             series: [50, 0, 35, 15]
         });
     },
-
-    showNotification: function (from, align) {
-        color = Math.floor((Math.random() * 4) + 1);
+    init: function() {
+        stats.initChartist();
 
         $.notify({
-            icon: "pe-7s-gift",
-            message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
+            icon: 'pe-7s-gift',
+            message: "Welcome to <b>Weather Stats Application</b> - a beautiful exercise for process weather events."
 
         }, {
-            type: type[color],
-            timer: 4000,
-            placement: {
-                from: from,
-                align: align
-            }
+            type: 'info',
+            timer: 4000
         });
     }
 }
