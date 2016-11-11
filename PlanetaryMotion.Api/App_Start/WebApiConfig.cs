@@ -1,7 +1,7 @@
 ﻿using System.Web.Http;
 using Swashbuckle.Application;
 
-namespace PlanetaryMotion.Web
+namespace PlanetaryMotion.Api
 {
     /// <summary>
     /// 
@@ -17,6 +17,8 @@ namespace PlanetaryMotion.Web
             // Web API configuration and services
 
             // Web API routes
+            config.EnableCors();
+
             config.MapHttpAttributeRoutes();
 
             config.Formatters.Remove(config.Formatters.XmlFormatter);
@@ -27,8 +29,6 @@ namespace PlanetaryMotion.Web
             defaults: null,
             constraints: null,
             handler: new RedirectHandler((message => message.RequestUri.ToString()), "swagger"));
-
-
         }
     }
 }

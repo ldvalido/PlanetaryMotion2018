@@ -1,10 +1,9 @@
 ﻿using System.Web.Http;
 using PlanetaryMotion.Domain.Contract;
-using PlanetaryMotion.Model;
 using PlanetaryMotion.Model.Model;
 using PlanetaryMotion.Storage.Implementation;
 
-namespace PlanetaryMotion.Web.Controllers
+namespace PlanetaryMotion.Api.Controllers
 {
     /// <summary>
     /// 

@@ -1,14 +1,16 @@
 ﻿using System.Web.Http;
+using System.Web.Http.Cors;
 using PlanetaryMotion.Domain.Contract;
 using PlanetaryMotion.Model.Dto;
 
-namespace PlanetaryMotion.Web.Controllers
+namespace PlanetaryMotion.Api.Controllers
 {
     /// <summary>
     /// 
     /// </summary>
     /// <seealso cref="System.Web.Http.ApiController" />
     [RoutePrefix("")]
+    [EnableCors(origins:"*",headers:"*",methods:"*")]
     public class StatsController : ApiController
     {
         /// <summary>
