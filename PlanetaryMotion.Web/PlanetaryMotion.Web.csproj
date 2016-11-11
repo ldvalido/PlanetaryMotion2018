@@ -117,22 +117,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\images\sidebar-5.jpg" />
     <Content Include="Global.asax" />
-    <Content Include="scripts\ai.0.22.9-build00167.js" />
-    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="scripts\bootstrap-checkbox-radio-switch.js" />
-    <Content Include="scripts\bootstrap-notify.js" />
-    <Content Include="scripts\bootstrap-select.js" />
-    <Content Include="scripts\bootstrap.min.js" />
-    <Content Include="scripts\chartist.min.js" />
-    <Content Include="scripts\stats.js" />
-    <Content Include="scripts\jquery-1.10.2.js" />
-    <Content Include="scripts\light-bootstrap-dashboard.js" />
-    <Content Include="styles\animate.min.css" />
-    <Content Include="styles\bootstrap.min.css" />
-    <Content Include="styles\demo.css" />
-    <Content Include="styles\light-bootstrap-dashboard.css" />
-    <Content Include="styles\pe-icon-7-stroke.css" />
+    <Content Include="assets\scripts\ai.0.22.9-build00167.js" />
+    <Content Include="assets\scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="assets\scripts\bootstrap-checkbox-radio-switch.js" />
+    <Content Include="assets\scripts\bootstrap-notify.js" />
+    <Content Include="assets\scripts\bootstrap-select.js" />
+    <Content Include="assets\scripts\bootstrap.min.js" />
+    <Content Include="assets\scripts\chartist.min.js" />
+    <Content Include="assets\scripts\stats.js" />
+    <Content Include="assets\scripts\jquery-1.10.2.js" />
+    <Content Include="assets\scripts\light-bootstrap-dashboard.js" />
+    <Content Include="assets\styles\animate.min.css" />
+    <Content Include="assets\styles\bootstrap.min.css" />
+    <Content Include="assets\styles\demo.css" />
+    <Content Include="assets\styles\light-bootstrap-dashboard.css" />
+    <Content Include="assets\styles\pe-icon-7-stroke.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +151,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="assets\font\Pe-icon-7-stroke.ttf" />
+    <Content Include="assets\font\Pe-icon-7-stroke.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
