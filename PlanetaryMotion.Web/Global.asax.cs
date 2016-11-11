@@ -17,9 +17,9 @@ namespace PlanetaryMotion.Web
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
             var config = GlobalConfiguration.Configuration;
-            var builder = new ServiceLocatorWebFluent().CreateContainer(config);
+            var builder = new ServiceLocatorWebFluent().CreateContainer(config).Build();
             // Set the dependency resolver to be Autofac.
-            config.DependencyResolver = new AutofacWebApiDependencyResolver(builder);
+            config.DependencyResolver = new AutofacWebApiDependencyResolver(builder.GetRawContainer());
         }
     }
 }

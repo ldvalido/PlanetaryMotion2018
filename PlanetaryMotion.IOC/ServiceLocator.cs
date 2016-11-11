@@ -10,6 +10,12 @@ namespace PlanetaryMotion.IOC
     /// </summary>
     public class ServiceLocatorFluent
     {
+        #region const        
+        /// <summary>
+        /// The assembly prefix name
+        /// </summary>
+        private const string AssemblyPrefixName = "planetarymotion";
+        #endregion
         #region Public Properties        
         /// <summary>
         /// Gets or sets the container.
@@ -17,7 +23,7 @@ namespace PlanetaryMotion.IOC
         /// <value>
         /// The container.
         /// </value>
-        static protected IContainer Container { get; set; }
+        static IContainer Container { get; set; }
         #endregion
 
         #region Private Properties        
@@ -34,7 +40,7 @@ namespace PlanetaryMotion.IOC
         /// <typeparam name="T"></typeparam>
         /// <param name="config">The configuration.</param>
         /// <returns></returns>
-        public virtual IContainer CreateContainer<T>(T config)
+        public ServiceLocatorFluent CreateContainer<T>(T config)
         {
             LoadAssemblies();
 
@@ -47,8 +53,36 @@ namespace PlanetaryMotion.IOC
                 .InstancePerDependency().
                 PropertiesAutowired();
             OnCreateContainer(Builder,loadedAsm, config);
-            return Builder.Build();
+            return this;
         }
+        /// <summary>
+        /// Registers the type.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="I"></typeparam>
+        /// <returns></returns>
+        public ServiceLocatorFluent Register<T>(T instance) where T : class
+        {
+            Builder.RegisterInstance(instance).AsImplementedInterfaces().AsSelf().As<T>();
+            return this;
+        }
+        /// <summary>
+        /// Builds this instance.
+        /// </summary>
+        public ServiceLocatorFluent Build()
+        {
+            Container = Builder.Build();
+            return this;
+        }
+        /// <summary>
+        /// Gets the raw container.
+        /// </summary>
+        /// <returns></returns>
+        public IContainer GetRawContainer()
+        {
+            return Container;
+        }
+
         /// <summary>
         /// Called when [create container].
         /// </summary>
@@ -88,14 +122,23 @@ namespace PlanetaryMotion.IOC
                 }
             }
         }
-
-        bool FilterDomainAssembly(AssemblyName asm)
+        /// <summary>
+        /// Filters the domain assembly.
+        /// </summary>
+        /// <param name="asm">The asm.</param>
+        /// <returns></returns>
+        public bool FilterDomainAssembly(AssemblyName asm)
         {
-            return asm.FullName.ToLowerInvariant().Contains("planetarymotion");
+            return asm.FullName.ToLowerInvariant().Contains(AssemblyPrefixName);
         }
-        bool FilterDomainAssembly(Assembly asm)
+        /// <summary>
+        /// Filters the domain assembly.
+        /// </summary>
+        /// <param name="asm">The asm.</param>
+        /// <returns></returns>
+        static bool FilterDomainAssembly(Assembly asm)
         {
-            return asm.FullName.ToLowerInvariant().Contains("planetarymotion");
+            return asm.FullName.ToLowerInvariant().Contains(AssemblyPrefixName);
         }
         #endregion
 

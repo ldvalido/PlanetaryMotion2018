@@ -1,4 +1,4 @@
-﻿using Autofac;
+﻿using PlanetaryMotion.IOC;
 using PlanetaryMotion.Processes.Option;
 
 namespace PlanetaryMotion.Processes.Batch
@@ -13,6 +13,6 @@ namespace PlanetaryMotion.Processes.Batch
         /// </summary>
         /// <param name="container">The container.</param>
         /// <param name="processOption">The process option.</param>
-        void ExecuteProcess(IContainer container, ProcessOption processOption);
+        void ExecuteProcess(ServiceLocatorFluent container, ProcessOption processOption);
     }
 }

@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Diagnostics;
-using Autofac;
 using PlanetaryMotion.Processes.Option;
 using System.Collections.Generic;
 using System.Linq;
+using PlanetaryMotion.IOC;
 
 namespace PlanetaryMotion.Processes.Batch
 {
@@ -21,7 +20,7 @@ namespace PlanetaryMotion.Processes.Batch
         /// </summary>
         /// <param name="processOption">The process option.</param>
         /// 
-        public void ExecuteProcess(IContainer container , ProcessOption processOption)
+        public void ExecuteProcess(ServiceLocatorFluent container , ProcessOption processOption)
         {
             var stopWatch = new Stopwatch();
             stopWatch.Start();

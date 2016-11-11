@@ -12,6 +12,12 @@ namespace PlanetaryMotion.Domain.Implementation
     /// <seealso cref="IWeatherHistoryService" />
     public class WeatherHistoryService : IWeatherHistoryService
     {
+        /// <summary>
+        /// Gets or sets the weather history storage.
+        /// </summary>
+        /// <value>
+        /// The weather history storage.
+        /// </value>
         public WeatherHistoryStorage WeatherHistoryStorage { get; set; }
         #region Implementation of IWeatherHistoryService        
         /// <summary>

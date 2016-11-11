@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Autofac;
 using PlanetaryMotion.Domain.Contract;
 using PlanetaryMotion.Domain.Test.Poco;
 using PlanetaryMotion.Geometry.Extension;
@@ -18,7 +17,7 @@ namespace PlanetaryMotion.Domain.Test
         #region Private Properties
 
         private readonly IEnumerable<Planet> _planets;
-        private readonly IContainer _container;
+        private readonly ServiceLocatorFluent _container;
         #endregion
 
         #region C...tor            
@@ -34,7 +33,7 @@ namespace PlanetaryMotion.Domain.Test
                 new Planet {Angle = 3, Galaxy = galaxy, Id = 2, Name = "Moq Planet #2", Radious = 2000},
                 new Planet {Angle = -5, Galaxy = galaxy, Id = 3, Name = "Moq Planet #3", Radious = 1000}
             };
-            _container = new ServiceLocatorFluent().CreateContainer<object>(null);
+            _container = new ServiceLocatorFluent().CreateContainer<object>(null).Build();
 
         }
         #endregion

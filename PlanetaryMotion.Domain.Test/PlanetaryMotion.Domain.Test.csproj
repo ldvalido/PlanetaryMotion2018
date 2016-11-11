@@ -71,8 +71,9 @@
   <ItemGroup>
     <Compile Include="CircularMovementTest.cs" />
     <Compile Include="GalaxyServiceTest.cs" />
+    <Compile Include="Poco\AligmentPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RecognizeAligmentPoints.cs" />
+    <Compile Include="WeatherConditionHistoryServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -93,6 +94,10 @@
     <ProjectReference Include="..\PlanetaryMotion.Model\PlanetaryMotion.Model.csproj">
       <Project>{A7F4CEA5-1E7E-4CCB-94AD-3F65133A36B5}</Project>
       <Name>PlanetaryMotion.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlanetaryMotion.Storage\PlanetaryMotion.Storage.csproj">
+      <Project>{BAA4584F-60CA-4DA2-9B85-0B09A437A3C9}</Project>
+      <Name>PlanetaryMotion.Storage</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

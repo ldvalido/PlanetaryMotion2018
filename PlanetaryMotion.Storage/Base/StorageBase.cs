@@ -53,7 +53,7 @@ namespace PlanetaryMotion.Storage.Base
         /// Gets all.
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<T> GetAll()
+        public virtual IEnumerable<T> GetAll()
         {
             return GetList().AsQueryable();
         }
