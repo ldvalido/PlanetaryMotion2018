@@ -13,4 +13,3 @@ set currentVersion="1.0"
 MSBuild.exe "%fwPath%"\%projectSolutionFileName%.sln /t:Rebuild
 
 "%runner%" end
-

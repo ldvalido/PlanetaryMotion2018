@@ -4,13 +4,15 @@ type = ['', 'info', 'success', 'warning', 'danger'];
 stats = {
     drawChart: function (stpQuantity, unknownQuantity, rainyQuantity, droughtQuantity) {
 
-        Chartist.Pie('#chartPreferences', {
+        Chartist.Bar('#chartPreferences', {
             labels: [
                 'STP (' + stpQuantity + ')',
                 'Unknown (' + unknownQuantity + ')',
                 'Rainy (' + rainyQuantity + ')',
                 'Drought (' + droughtQuantity + ')'],
             series: [stpQuantity, unknownQuantity, rainyQuantity, droughtQuantity]
+        }, {
+            distributeSeries: true
         });
     },
     showMaxTrianglePerimeter: function (maxTrianglePerimeter) {
