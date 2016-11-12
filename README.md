@@ -34,5 +34,6 @@ Asimismo a través de la url http://104.196.209.111, es posible realizar la nave
 Se incluye la siguiente documentación
 * El DER correspondiente a la base de datos es realizo a través de la herramienta MySql WorkBench 6.3.
 * El Help File correspondiente a la solución y a las diversas clases existentes se realizo con una versión trial de la herramienta Document! X.
+
 # Próximos Pasos
 Actualmente se esta configurando el circuito de CI con un Jenkins en la url: http://104.196.209.111:8080/. La idea básicamente es poder integrar todo el desarrollo en un flow único a través de esta herramienta.
