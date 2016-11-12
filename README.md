@@ -35,5 +35,12 @@ Se incluye la siguiente documentación
 * El DER correspondiente a la base de datos es realizo a través de la herramienta MySql WorkBench 6.3.
 * El Help File correspondiente a la solución y a las diversas clases existentes se realizo con una versión trial de la herramienta Document! X.
 
-# Próximos Pasos
-Actualmente se esta configurando el circuito de CI con un Jenkins en la url: http://104.196.209.111:8080/. La idea básicamente es poder integrar todo el desarrollo en un flow único a través de esta herramienta.
+# Jenkins
+Actualmente se realiza el deploy utilizando Jenkins en el servidor de deploy de la aplicación. Jenkins se encuentra compilando los proyectos de la aplicación como así también realizando las configuraciones correspondientes para el ambiente productivo.
+
+#Próximos Pasos
+* UI - Make the chance to choose the representation of the data
+* View predictions day by day
+* Improve UI w/ Yarn
+* Automatize Sonar Stats Processing
+* Add support on Sonar for Javascript
