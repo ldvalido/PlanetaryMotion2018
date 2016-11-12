@@ -16,7 +16,7 @@ stats = {
         });
     },
     showMaxTrianglePerimeter: function (maxTrianglePerimeter) {
-        var formattedPerimeter = maxTrianglePerimeter.toFixed(2);
+        var formattedPerimeter = (maxTrianglePerimeter/1000).toFixed(2);
         $('#spanMaxPerimeter').html(formattedPerimeter);
     },
     initChartist: function(apiPrefix) {
