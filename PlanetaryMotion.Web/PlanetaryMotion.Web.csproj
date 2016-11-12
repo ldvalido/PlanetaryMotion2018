@@ -155,6 +155,7 @@
     <Content Include="assets\font\Pe-icon-7-stroke.ttf" />
     <Content Include="assets\font\Pe-icon-7-stroke.woff" />
     <None Include="Properties\PublishProfiles\WebPublish.pubxml" />
+    <None Include="Web.AppSetting.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

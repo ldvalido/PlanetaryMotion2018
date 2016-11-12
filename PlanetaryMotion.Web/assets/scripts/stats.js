@@ -4,25 +4,6 @@ type = ['', 'info', 'success', 'warning', 'danger'];
 stats = {
     drawChart: function (stpQuantity, unknownQuantity, rainyQuantity, droughtQuantity) {
 
-        var dataPreferences = {
-            series: [
-                [25, 30, 20, 25]
-            ]
-        };
-        var total = stpQuantity + unknownQuantity + rainyQuantity + droughtQuantity;
-        var optionsPreferences = {
-            donut: true,
-            donutWidth: 200,
-            startAngle: 0,
-            total: total,
-            showLabel: false,
-            axisX: {
-                showGrid: false
-            }
-        };
-
-        Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
-
         Chartist.Pie('#chartPreferences', {
             labels: [
                 'STP (' + stpQuantity + ')',
