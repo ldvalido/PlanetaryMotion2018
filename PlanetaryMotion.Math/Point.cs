@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using PlanetaryMotion.Geometry.Extension;
 
 namespace PlanetaryMotion.Geometry
 {
@@ -12,7 +11,6 @@ namespace PlanetaryMotion.Geometry
     public class Point
     {
         #region Const
-        private const double Pi2 = Math.PI *2;
         private const double FromRadian = Math.PI / 180;
         #endregion
         #region C..tor        
@@ -44,14 +42,14 @@ namespace PlanetaryMotion.Geometry
         /// <value>
         /// The x.
         /// </value>
-        public double X { get; set; }
+        public double X { get; }
         /// <summary>
         /// Gets or sets the y.
         /// </summary>
         /// <value>
         /// The y.
         /// </value>
-        public double Y { get; set; }
+        public double Y { get; }
         #endregion
 
         #region Auxiliar Methods        
@@ -85,10 +83,7 @@ namespace PlanetaryMotion.Geometry
         public bool AreAligned(IEnumerable<Point> points)
         {
             var rect = new Rect(this, points.First());
-            return points.All(p =>
-            {
-                return rect.Belongs(p);
-            });
+            return points.All(p => rect.Belongs(p));
         }
         /// <summary>
         /// Moves the angle.
