@@ -37,7 +37,6 @@ stats = {
 
         $.notify({
             message: "Welcome to <b>Weather Stats Application</b> - a nice exercise for process weather events."
-
         }, {
             type: 'info',
             timer: 400000
