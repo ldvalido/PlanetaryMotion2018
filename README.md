@@ -44,6 +44,6 @@ Para resolver las dependencias del lado frontEnd actualmente se esta utilizando 
 ## Próximos Pasos
 * UI - Make the chance to choose the representation of the data
 * View predictions day by day
-~~* Improve UI w/ Yarn~~ -Done-
+* ~~Improve UI w/ Yarn~~ -Done-
 * Automatize Sonar Stats Processing
 * Add support on Sonar for Javascript (próximo paso)
