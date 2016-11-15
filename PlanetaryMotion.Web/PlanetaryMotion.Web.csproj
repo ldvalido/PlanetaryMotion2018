@@ -124,9 +124,6 @@
     <Content Include="assets\images\favicon.ico" />
     <Content Include="assets\images\sidebar-5.jpg" />
     <Content Include="Global.asax" />
-    <Content Include="assets\styles\demo.css" />
-    <Content Include="assets\styles\light-bootstrap-dashboard.css" />
-    <Content Include="assets\styles\pe-icon-7-stroke.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
