@@ -22,7 +22,7 @@ stats = {
     initChartist: function(apiPrefix) {
         $.ajax(
         {
-            url: apiPrefix+'/stats',
+            url: apiPrefix + '/stats',
             crossDomain: true,
             type:'GET'
         }).done(function (data) {
@@ -36,12 +36,10 @@ stats = {
         stats.initChartist(apiPrefix);
 
         $.notify({
-            icon: 'pe-7s-gift',
             message: "Welcome to <b>Weather Stats Application</b> - a nice exercise for process weather events."
-
         }, {
             type: 'info',
-            timer: 4000
+            timer: 400000
         });
     }
 }

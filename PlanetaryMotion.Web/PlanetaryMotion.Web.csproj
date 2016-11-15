@@ -118,23 +118,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\dist\planetarymotion-bundle.min.css" />
+    <Content Include="assets\dist\planetarymotion-bundle.min.js" />
+    <Content Include="assets\dist\planetarymotion-lib-bundle.min.css" />
+    <Content Include="assets\dist\planetarymotion-lib-bundle.min.js" />
+    <Content Include="assets\images\favicon.ico" />
     <Content Include="assets\images\sidebar-5.jpg" />
     <Content Include="Global.asax" />
-    <Content Include="assets\scripts\ai.0.22.9-build00167.js" />
-    <Content Include="assets\scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="assets\scripts\bootstrap-checkbox-radio-switch.js" />
-    <Content Include="assets\scripts\bootstrap-notify.js" />
-    <Content Include="assets\scripts\bootstrap-select.js" />
-    <Content Include="assets\scripts\bootstrap.min.js" />
-    <Content Include="assets\scripts\chartist.min.js" />
-    <Content Include="assets\scripts\stats.js" />
-    <Content Include="assets\scripts\jquery-1.10.2.js" />
-    <Content Include="assets\scripts\light-bootstrap-dashboard.js" />
-    <Content Include="assets\styles\animate.min.css" />
-    <Content Include="assets\styles\bootstrap.min.css" />
-    <Content Include="assets\styles\demo.css" />
-    <Content Include="assets\styles\light-bootstrap-dashboard.css" />
-    <Content Include="assets\styles\pe-icon-7-stroke.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
