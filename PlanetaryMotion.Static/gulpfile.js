@@ -30,7 +30,32 @@ gulp.task('lint', function() {
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    var sources = [];
+    var sources = [];	
+	sources.push('scripts/*.js');
+	return gulp.src(sources)
+        .pipe(concat('planetarymotion-bundle.js'))
+        .pipe(gulp.dest('dist'))
+        .pipe(rename('planetarymotion-bundle.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('../PlanetaryMotion.Web/assets/dist/'))
+        .pipe(gulp.dest('dist'));
+});
+
+// Concatenate only
+gulp.task('scriptsDev', function() {
+    var sources = [];	
+	sources.push('scripts/*.js');
+	return gulp.src(sources)
+        .pipe(concat('planetarymotion-bundle.js'))
+        .pipe(gulp.dest('dist'))
+        .pipe(rename('planetarymotion-bundle.min.js'))
+        .pipe(gulp.dest('../PlanetaryMotion.Web/assets/dist/'))
+        .pipe(gulp.dest('dist'));
+});
+
+// Concatenate & Minify JS
+gulp.task('libs', function() {
+	var sources = [];
 	for (var i = 0; i < dependences.scripts.length; i++) {
 		var file = dependences.scripts[i].source;
 		sources.push(file);
@@ -44,27 +69,25 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist'));
 });
 
-// Concatenate & Minify JS
-gulp.task('libs', function() {
-    var sources = [];
-	sources.push('scripts/*.js');
-	return gulp.src(sources)
-        .pipe(concat('planetarymotion-bundle.js'))
-        .pipe(gulp.dest('dist'))
-        .pipe(rename('planetarymotion-bundle.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('../PlanetaryMotion.Web/assets/dist/'))
-        .pipe(gulp.dest('dist'));
-});
-
 // Concatenate & Minify CSS
-gulp.task('styles', function() {
+gulp.task('stylesLib', function() {
 	var sources = [];
-	sources.push('styles/*.css');
 	for (var i = 0; i < dependences.styles.length; i++) {
 		var file = dependences.styles[i].source;
 		sources.push(file);
 	}
+    return gulp.src(sources)
+        .pipe(concat('planetarymotion-lib-bundle.css'))
+        .pipe(gulp.dest('dist'))
+        .pipe(rename('planetarymotion-lib-bundle.min.css'))
+        .pipe(cssMinifier({compatibility: 'ie8'}))
+        .pipe(gulp.dest('../PlanetaryMotion.Web/assets/dist/'))
+		.pipe(gulp.dest('dist'));
+});
+
+gulp.task('styles', function() {
+	var sources = [];
+	sources.push('styles/*.css');
     return gulp.src(sources)
         .pipe(concat('planetarymotion-bundle.css'))
         .pipe(gulp.dest('dist'))
@@ -74,5 +97,17 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest('dist'));
 });
 
+gulp.task('stylesDev', function() {
+	var sources = [];
+	sources.push('styles/*.css');
+    return gulp.src(sources)
+        .pipe(concat('planetarymotion-bundle.css'))
+        .pipe(gulp.dest('dist'))
+        .pipe(rename('planetarymotion-bundle.min.css'))
+        .pipe(gulp.dest('../PlanetaryMotion.Web/assets/dist/'))
+		.pipe(gulp.dest('dist'));
+});
+
 // Default Task
-gulp.task('default', ['lint', 'libs', 'scripts', 'styles']);
+gulp.task('default', ['lint', 'libs', 'scripts', 'stylesLib', 'styles']);
+gulp.task('defaultDev', ['libs', 'scriptsDev', 'stylesLib', 'stylesDev']);

@@ -120,6 +120,7 @@
   <ItemGroup>
     <Content Include="assets\dist\planetarymotion-bundle.min.css" />
     <Content Include="assets\dist\planetarymotion-bundle.min.js" />
+    <Content Include="assets\dist\planetarymotion-lib-bundle.min.css" />
     <Content Include="assets\dist\planetarymotion-lib-bundle.min.js" />
     <Content Include="assets\images\favicon.ico" />
     <Content Include="assets\images\sidebar-5.jpg" />
