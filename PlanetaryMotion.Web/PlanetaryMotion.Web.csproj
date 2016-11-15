@@ -118,18 +118,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\dist\planetarymotion-bundle.min.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="assets\dist\planetarymotion-bundle.min.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="assets\dist\planetarymotion-lib-bundle.min.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="assets\dist\planetarymotion-lib-bundle.min.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="assets\images\favicon.ico" />
     <Content Include="assets\images\sidebar-5.jpg" />
     <Content Include="Global.asax" />
