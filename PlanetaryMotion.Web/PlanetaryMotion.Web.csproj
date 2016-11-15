@@ -120,11 +120,9 @@
   <ItemGroup>
     <Content Include="assets\images\favicon.ico" />
     <Content Include="assets\images\sidebar-5.jpg" />
+    <Content Include="assets\planetarymotion-bundle.min.css" />
+    <Content Include="assets\planetarymotion-bundle.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="assets\scripts\ai.0.22.9-build00167.js" />
-    <Content Include="assets\scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="assets\scripts\stats.js" />
-    <Content Include="assets\scripts\light-bootstrap-dashboard.js" />
     <Content Include="assets\styles\demo.css" />
     <Content Include="assets\styles\light-bootstrap-dashboard.css" />
     <Content Include="assets\styles\pe-icon-7-stroke.css" />
