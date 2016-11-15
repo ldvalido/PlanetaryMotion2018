@@ -22,7 +22,7 @@ stats = {
     initChartist: function(apiPrefix) {
         $.ajax(
         {
-            url: apiPrefix+'/stats',
+            url: apiPrefix + '/stats',
             crossDomain: true,
             type:'GET'
         }).done(function (data) {
