@@ -36,12 +36,11 @@ stats = {
         stats.initChartist(apiPrefix);
 
         $.notify({
-            icon: 'pe-7s-gift',
             message: "Welcome to <b>Weather Stats Application</b> - a nice exercise for process weather events."
 
         }, {
             type: 'info',
-            timer: 4000
+            timer: 400000
         });
     }
 }
