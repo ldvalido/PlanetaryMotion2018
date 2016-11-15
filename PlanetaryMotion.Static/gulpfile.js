@@ -40,7 +40,7 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist'))
         .pipe(rename('planetarymotion-lib-bundle.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('../PlanetaryMotion.Web/assets/'))
+        .pipe(gulp.dest('../PlanetaryMotion.Web/assets/dist/'))
         .pipe(gulp.dest('dist'));
 });
 
@@ -53,7 +53,7 @@ gulp.task('libs', function() {
         .pipe(gulp.dest('dist'))
         .pipe(rename('planetarymotion-bundle.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('../PlanetaryMotion.Web/assets/'))
+        .pipe(gulp.dest('../PlanetaryMotion.Web/assets/dist/'))
         .pipe(gulp.dest('dist'));
 });
 
@@ -70,7 +70,7 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('dist'))
         .pipe(rename('planetarymotion-bundle.min.css'))
         .pipe(cssMinifier({compatibility: 'ie8'}))
-        .pipe(gulp.dest('../PlanetaryMotion.Web/assets/'))
+        .pipe(gulp.dest('../PlanetaryMotion.Web/assets/dist/'))
 		.pipe(gulp.dest('dist'));
 });
 

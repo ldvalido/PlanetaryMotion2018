@@ -118,10 +118,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\dist\planetarymotion-bundle.min.css" />
+    <Content Include="assets\dist\planetarymotion-bundle.min.js" />
+    <Content Include="assets\dist\planetarymotion-lib-bundle.min.js" />
     <Content Include="assets\images\favicon.ico" />
     <Content Include="assets\images\sidebar-5.jpg" />
-    <Content Include="assets\planetarymotion-bundle.min.css" />
-    <Content Include="assets\planetarymotion-bundle.min.js" />
     <Content Include="Global.asax" />
     <Content Include="assets\styles\demo.css" />
     <Content Include="assets\styles\light-bootstrap-dashboard.css" />
