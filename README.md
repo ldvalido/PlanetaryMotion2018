@@ -47,4 +47,4 @@ Para resolver las dependencias del lado frontEnd actualmente se esta utilizando 
 * ~~Improve UI w/ Yarn~~ -Done-
 * Automatize Sonar Stats Processing
 * Add support on Sonar for Javascript (próximo paso)
-* Migrate API and Web to ASP.net core and implement the solution on Linux.
+* ~~Migrate API and Web to ASP.net core and implement the solution on Linux.~~ (Ver https://github.com/ldvalido/PlanetaryMotion-Core) 
