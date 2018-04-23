@@ -26,10 +26,10 @@ Los frameworks mas importantes utilizados en la aplicación son los que se detal
 Debido a los issues existentes de compatiblidad entre MySQL 5.x y Entity Framework en la funcionalidad de migración de base de datos se decidió utilizar la solución ya establecida en el repositorio destinada a tal fin (https://github.com/ldvalido/DDS-ORM).
 
 ## SonarQube
-Asimismo la aplicación cuenta con una instancia dedicada de SonarQube en la url: http://104.196.209.111:9000/.
+Asimismo la aplicación esta diseñada para ejecutar analisis de métricas estaticas de código en SonarQube.
 Esta aplicaición ejecuta las métricas de código correspondientes del código fuente. Cabe mencionar que dicha instancia se encuentra hosteada en GCP. A fin de poder correr el motor de SonarQube se configuro el Running Environment de Java 8 y al mismo se le agrego el plugin correspondiente para C#.
 ## Swagger
-Asimismo a través de la url http://104.196.209.111, es posible realizar la navegación de los diferentes recursos API expuestos en la aplicación.
+Asimismo a través de la url publica, es posible realizar la navegación de los diferentes recursos API expuestos en la aplicación.
 ## Documentación
 Se incluye la siguiente documentación
 * El DER correspondiente a la base de datos es realizo a través de la herramienta MySql WorkBench 6.3.
@@ -40,11 +40,3 @@ Actualmente se realiza el deploy utilizando Jenkins en el servidor de deploy de 
 
 ## Dependencias Front
 Para resolver las dependencias del lado frontEnd actualmente se esta utilizando Yarn y Gulp. Asimismo estos artefactos son utilizados por el motor de CI para proceder a hacer el build correspondiente.
-
-## Próximos Pasos
-* UI - Make the chance to choose the representation of the data
-* View predictions day by day
-* ~~Improve UI w/ Yarn~~ -Done-
-* Automatize Sonar Stats Processing
-* Add support on Sonar for Javascript (próximo paso)
-* ~~Migrate API and Web to ASP.net core and implement the solution on Linux.~~ (Ver https://github.com/ldvalido/PlanetaryMotion-Core) 
